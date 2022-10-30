@@ -1,31 +1,18 @@
 ﻿    body {
-        margin: 0px auto;
+        margin: auto;
         padding: 0px;
         text-align: center;
         width: 100%;
-        font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: larger;
         background-color: white;
+        color: black;
+        background-image: url("landskab.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
 
-    }
-
-.oval {
-    height: 50px;
-    width: 100px;
-    background-color: #555;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-    .square {
-        height: 150px;
-        width: 1000px;
-        background-color: #555;
-        position: fixed;
-        bottom: 0%;
-        left: 50%;
-        transform: translate(-50%);
     }
 
     #header {
@@ -37,65 +24,12 @@
         line-height: 70px;
     }
 
-    #header li {
-        display: inline-block;
-        margin-right: 25px;
-        font-size: 17px;
-        color: #084B8A;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    #header #site_name {
-        text-align: left;
-        width: 680px;
-        font-size: 35px;
-        margin-left: 20px;
-    }
-
-    #rest, #mad, #karton, #plast, #papir, #pap, #glas, #metal {
-        margin-top: 100px;
+    #rest, #mad, #karton, #plast, #papir, #pap, #glas, #metal, #restmad {
+        margin: auto;
         width: 1000px;
-        height: 400px;
-        margin-left: 20%;
-        padding: 50px;
-        box-sizing: border-box;
-        background-color: #084B8A;
-        border-radius: 10px;
-        color: white;
-        top: 100%;
-        left: 50%;
-    }
-
-    #1, #2, #3 {
-        margin-top: 400px;
-        width: 90%;
-        height: 400px;
-        margin-left: 5%;
-        padding: 50px;
-        box-sizing: border-box;
-        background-color: #375d3b;
-        border-radius: 10px;
-        color: white;
-        left: 50%;
-    }
-    .oval {
-        height: 50px;
-        width: 100px;
-        background-color: #555;
-        border-radius: 50%;
-    }
-
-    #home h1 {
-        font-size: 40px;
-    }
-
-    #home p {
-        font-size: 20px;
-    }
-
-    #about p {
-        font-size: 20px;
+        height: auto;
+        padding: 100px;
+        border-bottom: 5px solid black;
     }
 
 
