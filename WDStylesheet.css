@@ -59,12 +59,23 @@
         line-height: 70px;
     }
 
-    #rest, #mad, #karton, #plast, #papir, #pap, #glas, #metal, #restmad {
+    .trashcat {
         margin: auto;
-        width: 1000px;
+        width: 50%;
         height: auto;
-        padding: 100px;
+        padding: 5%;
         border-bottom: 5px solid black;
+        margin-bottom: 10%;
     }
+    #rest{
+        background-color: #120c0e;
+        color: white;
+    }
+
+    #mad {
+        background-color: #1fb25a;
+        color: white;
+    }
+
 
 
