@@ -11,7 +11,7 @@ let processScroll = () => {
 }
 document.addEventListener('scroll', processScroll);
 
-/*
+
 (function () {
 function buildQuiz() {
     // variable to store the HTML output
@@ -80,7 +80,7 @@ function showResults() {
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `${numCorrect} ud af ${myQuestions.length} rigtige!`;
 }
 
 const quizContainer = document.getElementById('quiz');
@@ -88,32 +88,20 @@ const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const myQuestions = [
     {
-        question: "Who invented JavaScript?",
+        question: "Skal restaffald altid afleveres i poser?",
         answers: {
-            a: "Douglas Crockford",
-            b: "Sheryl Sandberg",
-            c: "Brendan Eich"
+            a: "Ja",
+            b: "Nej"
         },
-        correctAnswer: "c"
+        correctAnswer: "a"
     },
     {
-        question: "Which one of these is a JavaScript package manager?",
+        question: "Skal pizzabakker sorteres som restaffald?",
         answers: {
-            a: "Node.js",
-            b: "TypeScript",
-            c: "npm"
+            a: "Ja",
+            b: "Nej"
         },
-        correctAnswer: "c"
-    },
-    {
-        question: "Which tool can you use to ensure code quality?",
-        answers: {
-            a: "Angular",
-            b: "jQuery",
-            c: "RequireJS",
-            d: "ESLint"
-        },
-        correctAnswer: "d"
+        correctAnswer: "a"
     }
 ];
 
@@ -123,4 +111,4 @@ buildQuiz();
 // on submit, show results
     submitButton.addEventListener('click', showResults);
 })();
-*/
+

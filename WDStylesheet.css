@@ -24,31 +24,33 @@
         background-size: 3%;
         top: 0;
     }
-    #bil{
-        background-image: url("bil.png");
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: 3%;
-        background-position-x: var(--scrollAmount);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        z-index: 2;
-    }
+#bil {
+    background-image: url("bil.png");
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 3%;
+    background-position-x: var(--scrollAmount);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    pointer-events: none;
+}
 
-    #skraldespande{
-        background-image: url("Web\ -\ forgrund.png");
-        z-index: 2;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: bottom;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+#skraldespande {
+    background-image: url("Web\ -\ forgrund.png");
+    z-index: 2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
 
 
     #header {
@@ -67,15 +69,6 @@
         padding: 5%;
         border-bottom: 5px solid black;
         margin-bottom: 10%;
-    }
-    #rest{
-        background-color: #120c0e;
-        color: white;
-    }
-
-    #mad {
-        background-color: #1fb25a;
-        color: white;
     }
 
     .question {
@@ -101,6 +94,3 @@
     #submit:hover {
         background-color: #3a8;
     }
-
-
-
