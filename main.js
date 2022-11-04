@@ -6,6 +6,7 @@ let processScroll = () => {
         scrollPercent = scrollTop / scrollBottom * 100 + '%';
 
     document.getElementById('progressbar').style.setProperty('--scrollAmount', scrollPercent);
+    console.log(scrollPercent);
 }
 document.addEventListener('scroll',processScroll);
 
