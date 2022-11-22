@@ -14,16 +14,16 @@
     background-size: cover;
     background-position: center;
 }
-    #progressbar{
-        --scrollAmount: 0%;
-        background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-        width: var(--scrollAmount);
-        min-height: 10px;
-        height: auto;
-        position: fixed;
-        background-size: 3%;
-        top: 0;
-    }
+#progressbar {
+    --scrollAmount: 0%;
+    background-color: #008830;
+    width: var(--scrollAmount);
+    min-height: 10px;
+    height: auto;
+    position: fixed;
+    background-size: 3%;
+    top: 0;
+}
 #bil {
     background-image: url("Billeder/bil.png");
     position: fixed;
@@ -38,7 +38,7 @@
 }
 
 #skraldespande {
-    background-image: url("Billeder/Forgrund.png");
+    background-image: url("Billeder/MurBar.png");
     z-index: 2;
     background-size: 100%;
     background-repeat: no-repeat;
