@@ -1,19 +1,19 @@
-﻿    body {
-        margin: auto;
-        padding: 0px;
-        text-align: center;
-        width: 100%;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: larger;
-        background-color: white;
-        color: black;
-        background-image: url("Web\ -\ Baggrund.png");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-size: cover;
-        background-position: center;
-    }
+﻿body {
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    background-color: white;
+    color: black;
+    background-image: url("Billeder/Baggrund.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+}
     #progressbar{
         --scrollAmount: 0%;
         background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
@@ -25,7 +25,7 @@
         top: 0;
     }
 #bil {
-    background-image: url("bil.png");
+    background-image: url("Billeder/bil.png");
     position: fixed;
     background-repeat: no-repeat;
     background-size: 3%;
@@ -38,7 +38,7 @@
 }
 
 #skraldespande {
-    background-image: url("Web\ -\ forgrund.png");
+    background-image: url("Billeder/Forgrund.png");
     z-index: 2;
     background-size: 100%;
     background-repeat: no-repeat;
