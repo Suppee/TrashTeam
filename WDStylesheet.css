@@ -43,8 +43,10 @@
         background-size:cover;
         background-position: center;
         position: fixed;
-        bottom: 0;
+        bottom: -280px;
         width: 100%;
+        transition: bottom 0.5s;
+        transition-timing-function: ease-in-out;
     }
     .navbar{
         
@@ -58,8 +60,8 @@
         text-align: center;
         padding: 10px;
     }
-    .navbar a:hover{
-        
+    .navbaground:hover{
+        bottom: 0px;
     }
 
 
