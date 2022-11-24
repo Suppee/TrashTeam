@@ -72,6 +72,11 @@
 
     }
 
+    .section{
+        padding-top: 20%;
+        padding-bottom:100%;
+    }
+
     .sectionHeader {
         padding-top: 2%;
         width: 100%;
