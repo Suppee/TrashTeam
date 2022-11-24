@@ -66,7 +66,7 @@
     }
 
     img{
-        max-width: 40%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -79,8 +79,11 @@
         height: 70px;
         line-height: 70px;
     }
+    .BodyTitle{
 
-    .SkraldKategori {
+    }
+
+    .BodyText {
         margin: auto;
         width: 50%;
         height: auto;
