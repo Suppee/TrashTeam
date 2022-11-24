@@ -1,4 +1,4 @@
-﻿body {
+body {
     margin: auto;
     padding: 0px;
     text-align: center;
@@ -56,31 +56,36 @@
         white-space: nowrap;
     }
     .navbar a{
+        width: 100%;
         display: inline-block;
         text-align: center;
     }
     .navbaground:hover{
         bottom: -20%;
     }
+    #navimg{
+        width:55%;
+    }
 
     .categoriHeader {
         width: 100%;
         margin: 0px auto;
-        padding-top: 10%;
+        padding-bottom:2%;
+        padding-top:2%;
         height: 70px;
         line-height: 70px;
 
     }
 
-    .section{
-        padding-bottom:100%;
-    }
+.section {
+    padding-bottom: 100%;
+}
 
     .sectionHeader {
         padding-top: 2%;
         width: 100%;
         height: auto;
-        line-height: 70px;
+        line-height: 15px;
     }
 
     #sticky {
@@ -91,18 +96,18 @@
     }
 
 
-    #infoBody {
-        justify-content: center;
-        margin: auto;
-        width: 50%;
-        margin-top: 50%;
-        margin-bottom: 10%;
-        background-color: #ffffff;
-        border-radius: 100px;
-        border-color: rgba(0, 0, 0, 0.817);
-        border-width: 5px;
-        border-style: groove;
-    }
+#infoBody {
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #ffffff;
+    border-radius: 100px;
+    border-color: rgba(0, 0, 0, 0.817);
+    border-width: 5px;
+    border-style: groove;
+}
 
     .BodyHeader {
         height: 100%;

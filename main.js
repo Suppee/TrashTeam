@@ -1,4 +1,8 @@
 
+$(window).on("scroll", function () {
+    $(".right").css("bottom", $(window).scrollTop() * -1);
+});
+
 let processScroll = () => {
     let docElem = document.documentElement,
         docBody = document.body,
@@ -10,6 +14,7 @@ let processScroll = () => {
     console.log(scrollPercent);
 }
 document.addEventListener('scroll', processScroll);
+
 
 
 
