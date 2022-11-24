@@ -108,6 +108,10 @@
         margin-left: 10%;
     }
 
-    .BodyIMG{
-        width: contain;
+    .BodyImg{
+        width: 200px;
+        height: 175px;
+    }
+    #Mad{
+        background-color: #00883085;
     }
