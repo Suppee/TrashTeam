@@ -49,11 +49,11 @@
         transition: bottom 0.5s;
         transition-timing-function: ease-in-out;
     }
-    .navbar{
-        
-        margin-left: 25%;
-        margin-right: 25%;
-        width: 100%;
+    .navbar {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0 10px;
+        text-align: center;
     }
     .navbar a{
         float: left;
@@ -65,9 +65,10 @@
         bottom: -20%;
     }
 
-    img{
-        max-width: 100%;
-        height: auto;
+    .navbar img {
+        margin: 10px;
+        display: inline-block;
+        width: 33%;
     }
 
 
@@ -75,28 +76,43 @@
 
     }
 
-    .categoriHeader {
+.categoriHeader {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    background-color: #ffffff;
+}
+
+    .sectionHeader {
+        padding-top: 2%;
         width: 100%;
-        margin: 0px auto;
         padding: 0px;
-        text-align: center;
-        height: 70px;
+        height: 140px;
         line-height: 70px;
     }
 
-    .sectionHeader{
+#infoBody {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 50%;
+    background-color: #ffffff;
+}
 
-    }
-
-    .BodyHeader{
-        width: 75%;
+    .BodyHeader {        
+        height: 100%;
     }
 
     .BodyText {
-        margin: auto;
-        width: 50%;
         height: auto;
-        padding: 5%;
-        border-bottom: 5px solid black;
-        margin-bottom: 10%;
+        padding-bottom: 10%;
+        text-align: center;
+        
+    }
+
+    .BodyIMG{
+        width: contain;
     }
