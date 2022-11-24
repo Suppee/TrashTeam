@@ -14,43 +14,43 @@
     background-size: cover;
     background-position: center;
 }
-#progressbar {
-    --scrollAmount: 0%;
-    background-color: #008830;
-    width: var(--scrollAmount);
-    min-height: 10px;
-    height: auto;
-    position: fixed;
-    background-size: 3%;
-    top: 0;
-}
-#bil {
-    background-image: url("Billeder/bil.png");
-    position:fixed;
-    background-repeat: no-repeat;
-    background-size: 3%;
-    background-position-x: var(--scrollAmount);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 2;
-    pointer-events: none;
-}
-.navbaground {
-    overflow: hidden;
-    float: bottom;
-    background-image: url("Billeder/Navbar/MurBar.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    bottom: -40%;
-    width: 100%;
-    height: 50%;
-    bottom: -45%;
-    transition: bottom 0.5s;
-    transition-timing-function: ease-in-out;
-}
+    #progressbar {
+        --scrollAmount: 0%;
+        background-color: #008830;
+        width: var(--scrollAmount);
+        min-height: 10px;
+        height: auto;
+        position: fixed;
+        background-size: 3%;
+        top: 0;
+    }
+    #bil {
+        background-image: url("Billeder/bil.png");
+        position:fixed;
+        background-repeat: no-repeat;
+        background-size: 3%;
+        background-position-x: var(--scrollAmount);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+    .navbaground {
+        overflow: hidden;
+        float: bottom;
+        background-image: url("Billeder/Navbar/MurBar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        bottom: -40%;
+        width: 100%;
+        height: 50%;
+        bottom: -45%;
+        transition: bottom 0.5s;
+        transition-timing-function: ease-in-out;
+    }
     .navbar{
         height: 100%;
         white-space: nowrap;
@@ -68,25 +68,19 @@
         height: 100%;
     }
 
-
-    #header {
-
+    .categoriHeader {
+        width: 100%;
+        margin: 0px auto;
+        padding-top: 10%;
+        text-align: center;
+        height: 70px;
+        line-height: 70px;
     }
-
-.categoriHeader {
-    width: 100%;
-    margin: 0px auto;
-    padding-top: 10%;
-    text-align: center;
-    height: 70px;
-    line-height: 70px;
-}
 
     .sectionHeader {
         padding-top: 2%;
         width: 100%;
-        padding: 0px;
-        height: 140px;
+        height: auto;
         line-height: 70px;
     }
 
@@ -108,8 +102,10 @@
 
     .BodyText {
         height: auto;
-        padding-bottom: 10%;
+        padding-bottom: 10px;
         text-align: center;
+        margin-right: 10%;
+        margin-left: 10%;
     }
 
     .BodyIMG{
