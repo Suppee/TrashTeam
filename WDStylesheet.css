@@ -26,7 +26,7 @@
 }
 #bil {
     background-image: url("Billeder/bil.png");
-    position: fixed;
+    position:fixed;
     background-repeat: no-repeat;
     background-size: 3%;
     background-position-x: var(--scrollAmount);
@@ -76,11 +76,10 @@
 .categoriHeader {
     width: 100%;
     margin: 0px auto;
-    padding: 0px;
+    padding-top: 10%;
     text-align: center;
     height: 70px;
     line-height: 70px;
-    background-color: #ffffff;
 }
 
     .sectionHeader {
