@@ -15,7 +15,7 @@
     background-size: cover;
     background-position: center;
     overflow-y: scroll;
-}
+    }
 
     /* Progress Bar*/
     #progressbar {
@@ -75,36 +75,28 @@
 
     /* MAIN SCROLLING ELEMENT*/
     /* Main Scrolling ID */
-#infoBody {
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-    margin-top: -150%;
-    margin-bottom: 150%;
-}
-
-.ScrollBody {
-}
+    #scrollBody {
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+        height: 150%;
+        margin-top: -150%;
+        margin-bottom: 150%;
+    }
 
     /* Body Classes */
     .BodyHeader {
-    height: 100%;
-    
+    height: 100%;    
     border-radius: 100px;
     border-color: rgba(0, 0, 0, 0.817);
     border-width: 5px;
     border-style: groove;
     background-color: #ffffff;
-}
-    .BodyText {
-        height: auto;
-        padding-bottom: 5%;
-        margin-right: 10%;
-        margin-left: 10%;
     }
+
     .BodyImg{
-        width: 200px;
-        height: 175px;
+    width: 200px;
+    height: 175px;
     }
 
     /* Trash Sorting Category Header*/
@@ -118,26 +110,29 @@
     }
 
     /* Section Classes*/
-    h2{
-
+    h2 {
+        padding-top: 2%;
+        width: 100%;
+        height: auto;
+        line-height: 15px;
     }
     .section {
     margin-top: 100%;
-    padding-bottom: 50%;
-}
-    .sectionHeader {
-    padding-top: 2%;
-    width: 100%;
-    height: auto;
-    line-height: 15px;
-}
+    margin-bottom:50%;
+    padding-bottom: 10%;
+    }   
+    .sectionBody {
+        height: auto;
+        padding-bottom: 5%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
 
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    font-size: 20px;
-}
+    #sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
 
     #Spil{
         margin-top: 50%;
