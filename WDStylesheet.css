@@ -93,9 +93,6 @@ body {
     margin-bottom: 80%;
 }
 
-.ScrollBody {
-}
-
     /* Body Classes */
     .BodyHeader {
     height: 100%;
@@ -104,16 +101,11 @@ body {
     border-width: 5px;
     border-style: groove;
     background-color: #ffffff;
-}
-    .BodyText {
-        height: auto;
-        padding-bottom: 5%;
-        margin-right: 10%;
-        margin-left: 10%;
     }
+
     .BodyImg{
-        width: 200px;
-        height: 175px;
+    width: 200px;
+    height: 175px;
     }
 
     /* Trash Sorting Category Header*/
@@ -127,19 +119,23 @@ body {
     }
 
     /* Section Classes*/
-    h2{
-
+    h2 {
+        padding-top: 2%;
+        width: 100%;
+        height: auto;
+        line-height: 15px;
     }
     .section {
     margin-top: 100%;
-    padding-bottom: 50%;
-}
-    .sectionHeader {
-    padding-top: 2%;
-    width: 100%;
-    height: auto;
-    line-height: 15px;
-}
+    margin-bottom:50%;
+    padding-bottom: 10%;
+    }   
+    .sectionBody {
+        height: auto;
+        padding-bottom: 5%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
 
 .sticky {
     position: -webkit-sticky;

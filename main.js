@@ -11,5 +11,3 @@ let processScroll = () => {
     console.log(scrollTop);
     console.log(scrollBottom)
 }
-window.scroll(0, document.documentElement.scrollHeight)
-document.addEventListener('scroll', processScroll);
