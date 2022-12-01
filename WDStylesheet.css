@@ -16,6 +16,16 @@
     background-position: center;
     overflow-y: scroll;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 
     /* Progress Bar*/
     #progressbar {
@@ -27,6 +37,7 @@
         position: fixed;
         background-size: 3%;
         top: 0;
+        z-index: 1;
     }
     #bil {
         background-image: url("Billeder/bil.png");
@@ -37,7 +48,6 @@
         width: 100%;
         height: 100%;
         top: 0;
-        z-index: 2;
         pointer-events: none;
     }
 
@@ -50,12 +60,12 @@
         background-size: cover;
         background-position: center;
         position: fixed;
-        bottom: -40%;
+        bottom: -45%;
         width: 100%;
         height: 50%;
-        bottom: -45%;
         transition: bottom 0.5s;
         transition-timing-function: ease-in-out;
+        z-index: 1;
     }
     .navbar{
         height: 100%;
@@ -79,8 +89,8 @@
     justify-content: center;
     margin: auto;
     width: 50%;
-    margin-top: -150%;
-    margin-bottom: 150%;
+    margin-top: 0%;
+    margin-bottom: 80%;
 }
 
 .ScrollBody {
@@ -89,7 +99,6 @@
     /* Body Classes */
     .BodyHeader {
     height: 100%;
-    
     border-radius: 100px;
     border-color: rgba(0, 0, 0, 0.817);
     border-width: 5px;
@@ -136,6 +145,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    width: auto;
     font-size: 20px;
 }
 
