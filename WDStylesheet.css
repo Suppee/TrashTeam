@@ -85,7 +85,7 @@ body {
 
     /* MAIN SCROLLING ELEMENT*/
     /* Main Scrolling ID */
-#infoBody {
+#scrollBody {
     justify-content: center;
     margin: auto;
     width: 50%;
