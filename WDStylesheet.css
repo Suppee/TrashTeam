@@ -6,9 +6,9 @@
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
-    background-color: white;
+    background-color: #a9c8c3;
     color: black;
-    background-image: url("Billeder/Baggrund/FullBaggrund.png");
+    /*background-image: url("Billeder/Baggrund/FullBaggrund.png");*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -30,17 +30,17 @@ body {
     /* Progress Bar*/
     #progressbar {
         --scrollAmount: 0%;
-        background-color: #008830;
+        background-color: #ffce00;
         width: var(--scrollAmount);
-        min-height: 10px;
+        min-height: 50px;
         height: auto;
         position: fixed;
         background-size: 3%;
         top: 0;
         z-index: 1;
     }
-    #bil {
-        background-image: url("Billeder/bil.png");
+    #truck {
+        background-image: url("Billeder/Skraldebil.png");
         position:fixed;
         background-repeat: no-repeat;
         background-size: 3%;
@@ -52,36 +52,52 @@ body {
     }
 
     /* Navigation Bar*/
-    .navbaground {
-        overflow: hidden;
+    .navbackground{
+        overflow: visible;
         float: bottom;
-        background-image: url("Billeder/Navbar/MurBar.png");
+        /*background-image: url("Billeder/Navbar/MurBar.png");*/
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: fixed;
-        bottom: -45%;
+        bottom: -20%;
         width: 100%;
-        height: 50%;
-        transition: bottom 0.5s;
-        transition-timing-function: ease-in-out;
+        height: 50%;    
         z-index: 1;
     }
     .navbar{
         height: 100%;
         white-space: nowrap;
+        display: flex;
+        justify-content: flex-start;
     }
     .navbar a{
         width: 100%;
         display: inline-block;
         text-align: center;
     }
-    .navbaground:hover{
-        bottom: -20%;
-    }
     #navimg{
         width:55%;
     }    
+    .navBin{
+        height: 50%;
+        position: relative;
+        width: 33%;
+        z-index: 2;
+        bottom: 85%;
+        pointer-events: none;
+        display: flex;
+    }
+
+    .navBinSelectors{
+        pointer-events: auto;   
+        position: relative;
+        width: 15%;
+        height: 20%;
+        top: 40%;
+        left: -50%;
+        margin: 5%;
+    }
 
     /* MAIN SCROLLING ELEMENT*/
     /* Main Scrolling ID */
@@ -89,8 +105,7 @@ body {
     justify-content: center;
     margin: auto;
     width: 50%;
-    margin-top: 0%;
-    margin-bottom: 80%;
+    z-index: 5;
 }
 
     /* Body Classes */
@@ -126,8 +141,8 @@ body {
         line-height: 15px;
     }
     .section {
-    margin-top: 100%;
     margin-bottom:50%;
+    margin-top:10%;
     padding-bottom: 10%;
     }   
     .sectionBody {
@@ -187,5 +202,19 @@ body {
     background-color: #913394;
 }
 
-
-
+.animBackground{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(
+    to top,
+    #bcb753 0%,
+    #bcb753 25%,
+    #a8c7c2 25%,
+    #a8c7c2 100%
+    );
+    z-index: -1000;
+    padding-top: 6%;
+    pointer-events: none;
+}

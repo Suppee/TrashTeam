@@ -7,27 +7,51 @@
         
     <link rel="stylesheet" type="text/css" href="WDStylesheet.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+ 
 </head>
 <body>
-
+    <div class="animBackground">
+    <lottie-player id="firstAnim" src="https://lottie.host/d63e7285-352c-409b-9c33-c6fa5991326c/92xc0NN8kp.json">
+    </lottie-player></div>
     <!-- Progress bar at top of page-->
     <div id="progressbar">
-        <div id="bil"></div>
+        <div id="truck"></div>
     </div>
 
     <!-- Navigation bar at bottom of page-->
-    <div class="navbaground">
+    <div class="navbackground">
+        <lottie-player id="secondAnim" src="https://lottie.host/8937e43b-1b85-4c68-a095-d499448f416b/v75J5DmCvM.json">
+        </lottie-player>
         <div class="navbar">
-            <a href="#Rest"> <img id="navimg" src="Billeder/Navbar/Skraldespand 1.png" alt="RestMad"></a>
+            <div class="navBin">
+                <lottie-player id="thirdAnim" src="https://lottie.host/8725411f-4335-458d-b812-5a3c5f59744f/jp9faKDQNs.json">
+                </lottie-player>
+                <div class="navBinSelectors"></div>
+                <div class="navBinSelectors"></div>
+            </div>
+            <div class="navBin">
+                <lottie-player id="ForthAnim" src="https://lottie.host/8725411f-4335-458d-b812-5a3c5f59744f/jp9faKDQNs.json">
+                </lottie-player>
+                <div class="navBinSelectors"></div>
+                <div class="navBinSelectors"></div>
+            </div>
+            <div class="navBin">
+                <lottie-player id="FifthAnim" src="https://lottie.host/8725411f-4335-458d-b812-5a3c5f59744f/jp9faKDQNs.json">
+                </lottie-player>
+                <div class="navBinSelectors"></div>
+                <div class="navBinSelectors"></div>
+            </div>
         </div>
     </div>
 
     <div id="scrollBody">
-
-
+        <div></div>
         <!-- Main Text Body-->
         <!-- Restaffald Kategori -->
+        <div class="section">
+            Odense Renovation  
+        </div>
         <div class="section" id="Rest">
 
             <img id="Trashbag" src="Billeder/TrashTop.png">
@@ -84,7 +108,7 @@
         -->
 
     </div>
-    
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
