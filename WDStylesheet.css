@@ -3,10 +3,10 @@
     padding: 0px;
     text-align: center;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: larger;
     background-color: #a9c8c3;
-    color: black;
+    color: #e6e6e6;
     /*background-image: url("Billeder/Baggrund/FullBaggrund.png");*/
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -67,6 +67,7 @@ body {
         white-space: nowrap;
         display: flex;
         justify-content: flex-start;
+        margin-left: 12.5%;
     }
     .navbar a{
         width: 100%;
@@ -77,8 +78,8 @@ body {
         width:55%;
     }
     .navBin{
-        height: 50%;
         position: relative;
+        height: 50%;
         width: 33%;
         z-index: 2;
         bottom: 85%;
@@ -111,19 +112,15 @@ body {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60%;
-    border-radius: 100px;
-    border-color: rgba(0, 0, 0, 0.817);
-    border-width: 5px;
-    border-style: groove;
-    background-color: #ffffff;
+    margin-top: 5%;
+    background-color: #ffffff00;
+    -webkit-text-stroke: 1px darkgrey;
     }
 
     .BodyImg{
-    width: 110%;
+    width: 130%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -10%;
 
     }
 
@@ -133,17 +130,43 @@ body {
         margin: 0px auto;
         padding-bottom: 2%;
         padding-top: 2%;
-        height: 70px;
-        line-height: 70px;
+        height: 100px;
+        line-height: 60px;
+        font-size: 60px;
+    }
+
+    h1 {
+        width: 100%;
+        margin: 0px auto;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        height: 100px;
+        line-height: 60px;
     }
 
     /* Section Classes*/
-    h2 {
+    h3 {
         padding-top: 2%;
         width: 100%;
         height: auto;
         line-height: 15px;
     }
+
+    /* Section Classes*/
+    h4 {
+        width: 100%;
+        margin: 0px auto;
+        padding-bottom: 20%;
+        padding-top: 12%;
+        height: 100px;
+        line-height: 60px;
+        font-size: 40px;
+    }
+
+    .green { 
+        color: #39b54a; 
+    }
+
     .section {
     margin-bottom:50%;
     margin-top:10%;
@@ -221,4 +244,17 @@ body {
     z-index: -1000;
     padding-top: 6%;
     pointer-events: none;
+}
+
+#animationWindow {
+    width: 150%;
+    height: 150%;
+    padding-top: 15%;
+    left: -25%
+   }
+.hide{
+    opacity: 0%;
+}
+.show{
+    opacity: 100%;
 }

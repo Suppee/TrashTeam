@@ -8,14 +8,18 @@
     <link rel="stylesheet" type="text/css" href="WDStylesheet.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.0/lottie.min.js" integrity="sha512-17otjw7eTNU9MtpB7mFfXEwB6yDjA2qjDFkKSvsywI1PRAgpyOo+cp/wPSE/1kK4fFjA9OKsZVO1tr93MGNCEw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  
 </head>
 <body>
 
     <!-- Intro Title-->
     <div class="BodyHeader">
-        <h1 id="Title">  Sorterings Guiden</h1>
-        <h3 id="Subtitle">  til Odense Kommune</h3>
+        <h1 id="Title">  Her i Odense skal vi sortere efter <span class="green"> 8 affaldstyper</span></h1>
+        <h4 id="Subtitle">  <span class="green">Scroll </span> videre ned på siden for at få mere at vide</h4>
+        <h4 id="Subtitle">  Eller <span class="green">klik</span> på en af <span class="green">de 8 ikoner</span>, som er placeret på skraldespandene.</h4>
     </div>
 
     <div class="animBackground">
@@ -27,7 +31,7 @@
     </div>
 
     <!-- Navigation bar at bottom of page-->
-    <div class="navbackground">
+    <div id="navBack" class="navbackground hide">
         <lottie-player id="secondAnim" src="https://lottie.host/8937e43b-1b85-4c68-a095-d499448f416b/v75J5DmCvM.json">
         </lottie-player>
         <div class="navbar">
@@ -38,16 +42,16 @@
                 <div class="navBinSelectors"></div>
             </div>
             <div class="navBin">
-                <lottie-player id="forthAnim" src="https://lottie.host/8725411f-4335-458d-b812-5a3c5f59744f/jp9faKDQNs.json">
+                <!--<lottie-player id="forthAnim" src="https://lottie.host/8725411f-4335-458d-b812-5a3c5f59744f/jp9faKDQNs.json">
                 </lottie-player>
                 <div class="navBinSelectors"></div>
-                <div class="navBinSelectors"></div>
+                <div class="navBinSelectors"></div>-->
             </div>
             <div class="navBin">
-                <lottie-player id="fifthAnim" src="https://lottie.host/8725411f-4335-458d-b812-5a3c5f59744f/jp9faKDQNs.json">
+                <!--<lottie-player id="fifthAnim" src="https://lottie.host/8725411f-4335-458d-b812-5a3c5f59744f/jp9faKDQNs.json">
                 </lottie-player>
                 <div class="navBinSelectors"></div>
-                <div class="navBinSelectors"></div>
+                <div class="navBinSelectors"></div>-->
             </div>
         </div>
     </div>
@@ -58,69 +62,35 @@
         <!-- Mad Kategori -->
         <div class="section" id="Mad">
 
-            <img id="Trashbag" src="Billeder/TrashTop.png">
-
             <!-- Restaffald Sticky Header -->
             <div class="sticky">
-                <h1 id="Mad">
+                <h2 id="Mad">
                     Mad Affald
-                </h1>
+                </h2>
             </div>
 
-<<<<<<< HEAD
-            <!-- Hvordan Restaffald Afsnit -->
-            <h2 class="sticky"> Hvordan</h2>
-            <div class="sectionBody">
-                <p> Mad & Restaffald skal i poser i beholderen, husk at binde knude på posen </p>
-=======
             <!-- Hvad Restaffald Afsnit -->
-            <h2> Hvad </h2>
             <div class="sectionBody">
                 <img class="BodyImg" src="Mad Oversigt.png" alt="Ble">
->>>>>>> main
+
             </div>
-
-
 
             <!-- Hvorfor Restaffald Afsnit -->
-<<<<<<< HEAD
-            <h2 class="sticky"> Hvorfor </h2>
             <div class="sectionBody">
                 <p>
-                    Restaffaldet brændes. Varmen fra ilden udnyttes til el og varme, som føres tilbage til husholdningerne.
-                    Sørg for at sortere så meget affald fra til genanvendelse som muligt, inden resten smides ud til restaffald.
-                    For at passe bedre på vores klima og miljø, skal vi reducere mængden af restaffald. Tak, fordi du sortere dit affald!
+                    Når du sorterer madaaffald bidrager du med, at vi bruger færre nye ressourcer.
                 </p>
-=======
 
             <div class="sectionBody">
-                <h2> Hvorfor </h2>
-                <lottie-player id="sixAnim" src="https://lottie.host/3a865da0-a9d8-413a-8913-835089350f09/EDaUX6glc0.json">
-                </lottie-player>
->>>>>>> main
+                <div id="animationWindow">
+                </div>
+
             </div>
-            
-
-<<<<<<< HEAD
-            <!-- Hvad Restaffald Afsnit -->
-            <h2 class="sticky"> Hvad </h2>
-=======
-            <!-- Hvordan Restaffald Afsnit -->
->>>>>>> main
+        
             <div class="sectionBody">
-                <h2> Hvordan</h2>
+                <h3> Hvordan</h3>
                 <p> Mad & Restaffald skal i poser i beholderen, husk at binde knude på posen </p>
             </div>
-<<<<<<< HEAD
-            <lottie-player id="sixAnim" src="https://lottie.host/3a865da0-a9d8-413a-8913-835089350f09/EDaUX6glc0.json">
-            </lottie-player>
-=======
->>>>>>> main
-
-
-
-
-
 
         </div>
 

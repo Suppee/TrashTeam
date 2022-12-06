@@ -13,6 +13,8 @@ let processScroll = () => {
     console.log(scrollTop);
     console.log(scrollBottom)
 
+    let navbackground = document.getElementById("navBack");
+
     let animationFirst = document.getElementById("firstAnim");
     let animationSecond = document.getElementById("secondAnim");
     let animationThrid = document.getElementById("thirdAnim");
@@ -21,17 +23,17 @@ let processScroll = () => {
     let animationSecondTrigger = animationSecond.getLottie();
     let animationThirdTrigger = animationThrid.getLottie();
 
-    /*if(scrollPercent >= .1 && !firstAnimPlayed) {
-        animationFirstTrigger.playSegments([0,15], true);
-        firstAnimPlayed = true;
-    }*/if(scrollPercent < .1 && firstAnimPlayed) {
-        animationFirstTrigger.playSegments([15,0], true);
-        firstAnimPlayed = false;
-    } else if(scrollPercent >= 4 && !secondAnimPlayed) {
+    if(scrollPercent >= 2) {
+        navbackground.className = "navbackground show";
+    }else if(scrollPercent < 2) {
+      navbackground.className = "navbackground hide";
+    } 
+    
+    if(scrollPercent >= 5 && !secondAnimPlayed) {
         animationSecondTrigger.playSegments([0,11], true);
         animationThirdTrigger.playSegments([42,60], true);
         secondAnimPlayed = true;
-    } else if(scrollPercent < 4 && secondAnimPlayed) {
+    } else if(scrollPercent < 5 && secondAnimPlayed) {
         animationSecondTrigger.playSegments([11,0], true);
         animationThirdTrigger.playSegments([60,42], true);
         secondAnimPlayed = false;
@@ -39,6 +41,7 @@ let processScroll = () => {
 }
 
 document.addEventListener('scroll', processScroll);
+
 
 document.addEventListener('DOMContentLoaded', function () {
     LottieInteractivity.create({
@@ -69,17 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 state: "autoplay",
                 reset: false
             }
-        ]
-      });
-    LottieInteractivity.create({
-      player: '#sixAnim',
-      mode: "scroll",
-      actions: [
-            {
-              visibility:[0.0, 1.0],
-              type: "seek",
-              frames: [0, 203],
-            },
         ]
       });
   });
@@ -127,5 +119,43 @@ document.addEventListener('DOMContentLoaded', function () {
   containerTwo.addEventListener("mouseout", () => {
     animationTrigger.playSegments([0, 1], true);  
   });
+
+  scrollLottie({
+    target: '#animationWindow',
+    path: "https://lottie.host/3a865da0-a9d8-413a-8913-835089350f09/EDaUX6glc0.json", 
+    duration: 4, 
+    speed: 'slow'
+   })
+
+   function scrollLottie(vars) {
+    let playhead = {frame: 0},
+      target = gsap.utils.toArray(vars.target)[0],
+      speeds = {slow: "+=2000", medium: "+=1000", fast: "+=500"},
+      st = {trigger: target, pin: true, start: "top top", end: speeds[vars.speed] || "+=1000", scrub: 1},
+      animation = lottie.loadAnimation({
+        container: target,
+        renderer: vars.renderer || "svg",
+        loop: false,
+        autoplay: false,
+        path: vars.path
+      });
+    for (let p in vars) { // let users override the ScrollTrigger defaults
+      st[p] = vars[p];
+    }
+    animation.addEventListener("DOMLoaded", function() {
+      gsap.to(playhead, {
+        duration: vars.duration || 0.5,
+        delay: vars.delay || 0,
+        frame: animation.totalFrames - 1,
+        ease: vars.ease || "none",
+        onUpdate: () => animation.goToAndStop(playhead.frame, true),
+        scrollTrigger: st
+      });
+      // in case there are any other ScrollTriggers on the page and the loading of this Lottie asset caused layout changes
+      ScrollTrigger.sort();
+      ScrollTrigger.refresh(); 
+    });
+    return animation;
+  }
 
 
