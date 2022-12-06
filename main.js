@@ -21,10 +21,10 @@ let processScroll = () => {
     let animationSecondTrigger = animationSecond.getLottie();
     let animationThirdTrigger = animationThrid.getLottie();
 
-    if(scrollPercent >= .1 && !firstAnimPlayed) {
+    /*if(scrollPercent >= .1 && !firstAnimPlayed) {
         animationFirstTrigger.playSegments([0,15], true);
         firstAnimPlayed = true;
-    } else if(scrollPercent < .1 && firstAnimPlayed) {
+    }*/if(scrollPercent < .1 && firstAnimPlayed) {
         animationFirstTrigger.playSegments([15,0], true);
         firstAnimPlayed = false;
     } else if(scrollPercent >= 4 && !secondAnimPlayed) {
@@ -39,7 +39,6 @@ let processScroll = () => {
 }
 
 document.addEventListener('scroll', processScroll);
-window.scroll(0, document.documentElement.scrollHeight)
 
 document.addEventListener('DOMContentLoaded', function () {
     LottieInteractivity.create({

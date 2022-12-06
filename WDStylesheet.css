@@ -55,7 +55,6 @@ body {
     .navbackground{
         overflow: visible;
         float: bottom;
-        /*background-image: url("Billeder/Navbar/MurBar.png");*/
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -110,7 +109,11 @@ body {
 
     /* Body Classes */
     .BodyHeader {
-    height: 100%;
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60%;
     border-radius: 100px;
     border-color: rgba(0, 0, 0, 0.817);
     border-width: 5px;
