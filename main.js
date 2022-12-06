@@ -71,6 +71,17 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         ]
       });
+    LottieInteractivity.create({
+      player: '#sixAnim',
+      mode: "scroll",
+      actions: [
+            {
+              visibility:[0.15, 0.85],
+              type: "seek",
+              frames: [0, 203],
+            },
+        ]
+      });
   });
   
   const containerOne = document.getElementsByClassName("navBinSelectors")[0];

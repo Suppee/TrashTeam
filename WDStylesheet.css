@@ -32,7 +32,7 @@ body {
         --scrollAmount: 0%;
         background-color: #ffce00;
         width: var(--scrollAmount);
-        min-height: 50px;
+        min-height: 20px;
         height: auto;
         position: fixed;
         background-size: 3%;
