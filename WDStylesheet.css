@@ -1,4 +1,3 @@
-    
     body {
     margin: auto;
     padding: 0px;
@@ -16,6 +15,7 @@
     background-position: center;
     overflow-y: scroll;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -28,7 +28,7 @@ body {
 
 
     /* Progress Bar*/
-    #progressbar {
+#progressbar {
         --scrollAmount: 0%;
         background-color: #ffce00;
         width: var(--scrollAmount);
@@ -62,7 +62,7 @@ body {
         position: fixed;
         bottom: -20%;
         width: 100%;
-        height: 50%;    
+        height: 50%;
         z-index: 1;
     }
     .navbar{
@@ -78,7 +78,7 @@ body {
     }
     #navimg{
         width:55%;
-    }    
+    }
     .navBin{
         height: 50%;
         position: relative;
@@ -90,7 +90,7 @@ body {
     }
 
     .navBinSelectors{
-        pointer-events: auto;   
+        pointer-events: auto;
         position: relative;
         width: 15%;
         height: 20%;
@@ -119,8 +119,11 @@ body {
     }
 
     .BodyImg{
-    width: 200px;
-    height: 175px;
+    width: 110%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
     }
 
     /* Trash Sorting Category Header*/
