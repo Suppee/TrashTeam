@@ -32,10 +32,8 @@ body {
         --scrollAmount: 0%;
         background-color: #ffce00;
         width: var(--scrollAmount);
-        min-height: 20px;
-        height: auto;
+        height: 20px;
         position: fixed;
-        background-size: 3%;
         top: 0;
         z-index: 1;
     }
@@ -158,17 +156,17 @@ body {
         margin-left: 10%;
     }
 
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: auto;
-    font-size: 20px;
-}
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: auto;
+        font-size: 20px;
+    }
 
     #Spil{
         margin-top: 50%;
-        margin-bottom: 20%;
+        margin-bottom: 50%;
     }
     #Trashbag{
         width:100%;
