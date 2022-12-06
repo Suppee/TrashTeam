@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
       mode: "scroll",
       actions: [
             {
-              visibility:[0.15, 0.85],
+              visibility:[0.0, 1.0],
               type: "seek",
               frames: [0, 203],
             },
