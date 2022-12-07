@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   scrollLottie({
     target: '#animationWindow',
-    path: "https://lottie.host/3a865da0-a9d8-413a-8913-835089350f09/EDaUX6glc0.json", 
+    path: "https://lottie.host/4fa6dc0d-0123-4603-a744-3c63c44a281f/h1ZcltJm78.json", 
     duration: 4, 
     speed: 'slow'
    })
