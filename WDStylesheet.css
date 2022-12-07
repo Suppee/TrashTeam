@@ -7,7 +7,6 @@
     font-size: larger;
     background-color: #a9c8c3;
     color: #e6e6e6;
-    /*background-image: url("Billeder/Baggrund/FullBaggrund.png");*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -67,34 +66,32 @@ body {
         white-space: nowrap;
         display: flex;
         justify-content: flex-start;
-        margin-left: 12.5%;
+        margin-left: 310px;
+       
     }
-    .navbar a{
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
+
     #navimg{
         width:55%;
     }
-    .navBin{
+    .navBin {
         position: relative;
         height: 50%;
-        width: 33%;
-        z-index: 2;
-        bottom: 85%;
-        pointer-events: none;
-        display: flex;
+        bottom: 80%;
+        display: flex; 
+        flex-wrap: wrap;
+
     }
+
+    
 
     .navBinSelectors{
         pointer-events: auto;
         position: relative;
         width: 15%;
         height: 20%;
-        top: 40%;
-        left: -50%;
-        margin: 5%;
+        top: -55%;
+        left: 21%;
+        margin: 7%;
     }
 
     /* MAIN SCROLLING ELEMENT*/
@@ -127,21 +124,14 @@ body {
     /* Trash Sorting Category Header*/
     h1 {
         width: 100%;
-        margin: 0px auto;
-        padding-bottom: 2%;
         padding-top: 2%;
         height: 100px;
         line-height: 60px;
         font-size: 60px;
     }
-
-    h1 {
+    h2{
         width: 100%;
-        margin: 0px auto;
-        padding-bottom: 2%;
-        padding-top: 2%;
-        height: 100px;
-        line-height: 60px;
+
     }
 
     /* Section Classes*/
@@ -204,7 +194,7 @@ body {
     color: white;
 }
     #Mad {
-    background-color: #1fb25a;
+    background-color: #1cb158;
 }
 
     /* Gruppe 2 */
