@@ -1,5 +1,16 @@
-var firstAnimPlayed = false;
 var secondAnimPlayed = false;
+var atFood = false;
+
+let animationSecond = document.getElementById("secondAnim");
+let animationThrid = document.getElementById("thirdAnim");
+let animationForth = document.getElementById("forthAnim");
+let animationFifth = document.getElementById("fifthAnim");
+
+let animationSecondTrigger = animationSecond.getLottie();
+let animationThirdTrigger = animationThrid.getLottie();
+let animationForthTrigger = animationForth.getLottie();
+let animationFifthTrigger = animationFifth.getLottie();
+
 let processScroll = () => {
     let docElem = document.documentElement,
         docBody = document.body,
@@ -12,69 +23,112 @@ let processScroll = () => {
     console.log(scrollPercentName);
     console.log(scrollTop);
     console.log(scrollBottom)
-
-    let navbackground = document.getElementById("navBack");
-
-    let animationFirst = document.getElementById("firstAnim");
-    let animationSecond = document.getElementById("secondAnim");
-    let animationThrid = document.getElementById("thirdAnim");
-
-    let animationFirstTrigger = animationFirst.getLottie();
-    let animationSecondTrigger = animationSecond.getLottie();
-    let animationThirdTrigger = animationThrid.getLottie();
-
-    if(scrollPercent >= 2) {
-        navbackground.className = "navbackground show";
-    }else if(scrollPercent < 2) {
-      navbackground.className = "navbackground hide";
-    } 
     
-    if(scrollPercent >= 5 && !secondAnimPlayed) {
-        animationSecondTrigger.playSegments([0,11], true);
-        animationThirdTrigger.playSegments([42,60], true);
+  if(scrollPercent >= 13.5 && scrollPercent <= 76){
+    atFood = true;
+  } else {
+    atFood = false;
+  }
+
+
+    if(scrollPercent >= 8 && !secondAnimPlayed) {
+        animationSecondTrigger.playSegments([0, 11], true);
+        animationThirdTrigger.playSegments([0, 16], true);
+        animationForthTrigger.playSegments([0, 16], true);
+        animationFifthTrigger.playSegments([0, 16], true);
         secondAnimPlayed = true;
-    } else if(scrollPercent < 5 && secondAnimPlayed) {
-        animationSecondTrigger.playSegments([11,0], true);
-        animationThirdTrigger.playSegments([60,42], true);
+    } else if(scrollPercent < 8 && secondAnimPlayed) {
+        animationSecondTrigger.playSegments([11, 0], true);
+        animationThirdTrigger.playSegments([16, 0], true);
+        animationForthTrigger.playSegments([16, 0], true);
+        animationFifthTrigger.playSegments([16, 0], true);
         secondAnimPlayed = false;
     }
 }
 
 document.addEventListener('scroll', processScroll);
 
-
 document.addEventListener('DOMContentLoaded', function () {
-    LottieInteractivity.create({
-        player: '#firstAnim',
-        mode: "chain",
-        actions: [
-          {
-            state: "autoplay",
-            reset: false
-          }
-        ]
-      });
-      LottieInteractivity.create({
-        player: '#secondAnim',
-        mode: "chain",
-        actions: [
-              {
-                  state: "autoplay",
-                  reset: false
-              }
-          ]
-        });
-    LottieInteractivity.create({
-      player: '#thirdAnim',
+  LottieInteractivity.create({
+      player: '#firstAnim',
       mode: "chain",
       actions: [
-            {
-                state: "autoplay",
-                reset: false
-            }
-        ]
-      });
-  });
+        {
+          state: "autoplay",
+          reset: false
+        }
+      ]
+    });
+  LottieInteractivity.create({
+    player: '#secondAnim',
+    mode: "click",
+    actions: [
+          {
+              state: "autoplay",
+              reset: false
+          }
+      ]
+    });
+  LottieInteractivity.create({
+    player: '#thirdAnim',
+    mode: "click",
+    actions: [
+          {
+              state: "autoplay",
+              reset: false
+          }
+      ]
+    });
+  LottieInteractivity.create({
+    player: '#forthAnim',
+    mode: "click",
+    actions: [
+          {
+              state: "autoplay",
+              reset: false
+          }
+      ]
+    });
+  LottieInteractivity.create({
+    player: '#fifthAnim',
+    mode: "click",
+    actions: [
+          {
+              state: "autoplay",
+              reset: false
+          }
+      ]
+    });
+  LottieInteractivity.create({
+    player: '#sixAnim',
+    mode: "cursor",
+    actions: [
+        {
+          type: "toggle"
+        }
+      ]
+    });
+  LottieInteractivity.create({
+    player: '#sevenAnim',
+    mode: "cursor",
+    actions: [
+        {
+          type: "toggle"
+        }
+      ]
+    });
+  LottieInteractivity.create({
+    player: '#eightAnim',
+    mode: "cursor",
+    actions: [
+        {
+          type: "toggle"
+        }
+      ]
+    });
+});
+  
+  const food = document.getElementById("trashBagTop");
   
   const containerOne = document.getElementsByClassName("navBinSelectors")[0];
   const containerTwo = document.getElementsByClassName("navBinSelectors")[1];
@@ -85,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
   containerOne.addEventListener("click", () => {
     console.log("First Button Hit");
     if (animationCompleted) {
-      animationTrigger.playSegments([10, 24], true);      
+      animationTrigger.playSegments([27, 42], true);      
       animationCompleted = false;
     }
   });
@@ -93,8 +147,12 @@ document.addEventListener('DOMContentLoaded', function () {
   containerTwo.addEventListener("click", () => {
     console.log("Second Button Hit");
     if (animationCompleted) {
-      animationTrigger.playSegments([26, 40], true);      
+      animationTrigger.playSegments([43, 58], true);  
       animationCompleted = false;
+    }
+
+    if(atFood !== true) {
+      food.scrollIntoView();   
     }
   });
   
@@ -104,27 +162,41 @@ document.addEventListener('DOMContentLoaded', function () {
   
   containerOne.addEventListener("mouseover", () => {
     console.log("First button Hover");
-    animationTrigger.playSegments([3, 4], true);  
+    animationTrigger.playSegments([20, 21], true);  
   });
   
   containerOne.addEventListener("mouseout", () => {
-    animationTrigger.playSegments([0, 1], true);  
+    animationTrigger.playSegments([17, 18], true);  
   });
   
   containerTwo.addEventListener("mouseover", () => {
     console.log("Second button Hover");
-    animationTrigger.playSegments([6, 7], true); 
+    animationTrigger.playSegments([23, 24], true); 
   });
   
   containerTwo.addEventListener("mouseout", () => {
-    animationTrigger.playSegments([0, 1], true);  
+    animationTrigger.playSegments([17, 18], true);  
   });
+
+  scrollLottie({
+    target: '#trashBagTop',
+    path: "https://lottie.host/c640c3f2-b67a-4825-ba13-3f0cd5b61fcf/wyPnHf24Tp.json", 
+    duration: 4, 
+    speed: 'fast'
+   })
 
   scrollLottie({
     target: '#animationWindow',
     path: "https://lottie.host/3a865da0-a9d8-413a-8913-835089350f09/EDaUX6glc0.json", 
     duration: 4, 
     speed: 'slow'
+   })
+
+   scrollLottie({
+    target: '#trashBagBottom',
+    path: "https://lottie.host/71b17bde-17b9-49eb-b765-97b18164f085/y5U8J1n5Sv.json", 
+    duration: 4, 
+    speed: 'medium'
    })
 
    function scrollLottie(vars) {

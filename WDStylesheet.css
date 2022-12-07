@@ -63,11 +63,12 @@ body {
         z-index: 1;
     }
     .navbar{
-        height: 100%;
+        height: 110%;
         white-space: nowrap;
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 12.5%;
+        display: flex ;
+        justify-content: space-between;
+        margin-left: 27%;
+        margin-right: 27%;
     }
     .navbar a{
         width: 100%;
@@ -80,21 +81,19 @@ body {
     .navBin{
         position: relative;
         height: 50%;
-        width: 33%;
-        z-index: 2;
-        bottom: 85%;
-        pointer-events: none;
+        bottom: 80%;
         display: flex;
+        flex-wrap: wrap;
     }
 
     .navBinSelectors{
         pointer-events: auto;
         position: relative;
-        width: 15%;
-        height: 20%;
-        top: 40%;
-        left: -50%;
-        margin: 5%;
+        width: 20%;
+        height: 23%;
+        top: -60%;
+        left: 12%;
+        margin: 9%;
     }
 
     /* MAIN SCROLLING ELEMENT*/
@@ -112,16 +111,21 @@ body {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
     background-color: #ffffff00;
-    -webkit-text-stroke: 1px darkgrey;
+    -webkit-text-stroke: 1px #a9a9a9;
     }
 
     .BodyImg{
     width: 130%;
     height: auto;
     margin-left: -10%;
-
+    margin-top: 10%;
+    }
+    .BodyImgTwo{
+    width: 30%;
+    height: auto;
+    margin-left: -10%;
+    margin-top: 10%;
     }
 
     /* Trash Sorting Category Header*/
@@ -129,13 +133,13 @@ body {
         width: 100%;
         margin: 0px auto;
         padding-bottom: 2%;
-        padding-top: 2%;
+        padding-top: 15%;
         height: 100px;
         line-height: 60px;
         font-size: 60px;
     }
 
-    h1 {
+    h2 {
         width: 100%;
         margin: 0px auto;
         padding-bottom: 2%;
@@ -157,7 +161,16 @@ body {
         width: 100%;
         margin: 0px auto;
         padding-bottom: 20%;
-        padding-top: 12%;
+        padding-top: 20%;
+        height: 100px;
+        line-height: 60px;
+        font-size: 40px;
+    }
+    h5 {
+        width: 100%;
+        margin: 0px auto;
+        padding-bottom: 40%;
+        padding-top: 20%;
         height: 100px;
         line-height: 60px;
         font-size: 40px;
@@ -166,17 +179,26 @@ body {
     .green { 
         color: #39b54a; 
     }
+    .red {
+        color: #e43c2f;
+    }
 
     .section {
-    margin-bottom:50%;
     margin-top:10%;
     padding-bottom: 10%;
     }   
     .sectionBody {
         height: auto;
-        padding-bottom: 5%;
         margin-right: 10%;
         margin-left: 10%;
+    }
+    .moreInfo {
+        height: auto;
+        margin-top:10%;
+        padding-bottom: 10%;   
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
     }
 
     .sticky {
@@ -191,11 +213,21 @@ body {
         margin-top: 50%;
         margin-bottom: 50%;
     }
-    #Trashbag{
-        width:100%;
+    #trashBagTop{
+        width:102%;
         height:auto;
-        background-color: black;
+        left: -1.5%;
+        margin-bottom: -11%;
+        margin-top: -20%;
     }
+
+    #trashBagBottom{
+        width:102%;
+        height:auto;
+        left: -1.5%;
+        margin-top: -1%;
+    }
+
 
     /* AFFALDS KATEGORI IDS*/
     /* Gruppe 1 */
@@ -247,10 +279,10 @@ body {
 }
 
 #animationWindow {
-    width: 150%;
-    height: 150%;
+    width: 125%;
+    height: 125%;
     padding-top: 15%;
-    left: -25%
+    left: -12.5%
    }
 .hide{
     opacity: 0%;
