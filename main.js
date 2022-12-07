@@ -31,13 +31,13 @@ let processScroll = () => {
   }
 
 
-    if(scrollPercent >= 8 && !secondAnimPlayed) {
+    if(scrollPercent >= 7 && !secondAnimPlayed) {
         animationSecondTrigger.playSegments([0, 11], true);
         animationThirdTrigger.playSegments([0, 16], true);
         animationForthTrigger.playSegments([0, 16], true);
         animationFifthTrigger.playSegments([0, 16], true);
         secondAnimPlayed = true;
-    } else if(scrollPercent < 8 && secondAnimPlayed) {
+    } else if(scrollPercent < 7 && secondAnimPlayed) {
         animationSecondTrigger.playSegments([11, 0], true);
         animationThirdTrigger.playSegments([16, 0], true);
         animationForthTrigger.playSegments([16, 0], true);
