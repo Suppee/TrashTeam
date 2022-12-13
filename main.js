@@ -31,13 +31,13 @@ let processScroll = () => {
   }
 
 
-    if(scrollPercent >= 7 && !secondAnimPlayed) {
+    if(scrollPercent >= 5 && !secondAnimPlayed) {
         animationSecondTrigger.playSegments([0, 11], true);
         animationThirdTrigger.playSegments([0, 16], true);
         animationForthTrigger.playSegments([0, 16], true);
         animationFifthTrigger.playSegments([0, 16], true);
         secondAnimPlayed = true;
-    } else if(scrollPercent < 7 && secondAnimPlayed) {
+    } else if(scrollPercent < 5 && secondAnimPlayed) {
         animationSecondTrigger.playSegments([11, 0], true);
         animationThirdTrigger.playSegments([16, 0], true);
         animationForthTrigger.playSegments([16, 0], true);
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   scrollLottie({
     target: '#animationWindow',
-    path: "https://lottie.host/4fa6dc0d-0123-4603-a744-3c63c44a281f/h1ZcltJm78.json", 
+    path: "https://lottie.host/15a092ad-3216-4dea-a920-9c37c742bccd/YLmgLce5ji.json", 
     duration: 4, 
     speed: 'slow'
    })

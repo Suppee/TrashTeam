@@ -5,7 +5,7 @@
     width: 100%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: larger;
-    background-color: #a9c8c3;
+    background-color: #f2f4f9;
     color: #e6e6e6;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -81,8 +81,6 @@ body {
         flex-wrap: wrap;
     }
 
-    
-
     .navBinSelectors{
         pointer-events: auto;
         position: relative;
@@ -98,7 +96,7 @@ body {
     #scrollBody {
     justify-content: center;
     margin: auto;
-    width: 50%;
+    width: 80%;
     z-index: 5;
 }
 
@@ -113,9 +111,9 @@ body {
     }
 
     .BodyImg{
-    width: 130%;
+    width: 120%;
     height: auto;
-    margin-left: -10%;
+    margin-left: -5%;
     margin-top: 10%;
     }
     .BodyImgTwo{
@@ -208,7 +206,7 @@ body {
     #trashBagTop{
         width:102%;
         height:auto;
-        left: -1.5%;
+        left: -1.35%;
         margin-bottom: -11%;
         margin-top: -20%;
     }
@@ -216,7 +214,7 @@ body {
     #trashBagBottom{
         width:102%;
         height:auto;
-        left: -1.5%;
+        left: -1.35%;
         margin-top: -1%;
     }
 
@@ -258,13 +256,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    background: linear-gradient(
-    to top,
-    #bcb753 0%,
-    #bcb753 25%,
-    #a8c7c2 25%,
-    #a8c7c2 100%
-    );
+    background-color: #eef0f7;
     z-index: -1000;
     padding-top: 6%;
     pointer-events: none;
@@ -273,7 +265,6 @@ body {
 #animationWindow {
     width: 125%;
     height: 125%;
-    padding-top: 15%;
     left: -12.5%
    }
 .hide{
