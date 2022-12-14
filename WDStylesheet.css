@@ -5,7 +5,7 @@
     width: 100%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: larger;
-    background-color: #f2f4f9;
+    background-color: #a8c7c2;
     color: #2c2b2b;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -80,8 +80,6 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
-
-    
 
     .navBinSelectors{
         pointer-events: auto;
@@ -205,6 +203,12 @@ body {
         flex-direction: row;
     }
 
+    .bagInfo {
+        height: 33%;
+        width: 33%;
+        margin-left: 33%;
+    }
+
     .sticky {
         position: -webkit-sticky;
         position: sticky;
@@ -266,13 +270,18 @@ body {
 }
 
 .animBackground{
-    height: 130%;
-    width: 130%;
+    width: 100%;
     position: fixed;
     top: 0;
-    left: -15%;
-    background-color: #eef0f7;
+    background: linear-gradient(
+        to top,
+        #bcb753 0%,
+        #bcb753 25%,
+        #a8c7c2 25%,
+        #a8c7c2 100%,
+    );
     z-index: -1000;
+    padding-top: 6%;
     pointer-events: none;
 }
 

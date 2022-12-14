@@ -126,6 +126,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       ]
     });
+  LottieInteractivity.create({
+    player: '#nineAnim',
+    mode: "scroll",
+    actions: [
+        {
+          visibility:[0.3,0.6],
+          container: "#bagInfo",
+          type: "seek",
+          frames: [0, 42],
+        }
+      ]
+    });
 });
   
   const food = document.getElementById("trashBagTop");
