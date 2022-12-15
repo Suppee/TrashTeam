@@ -26,6 +26,7 @@ let processScroll = () => {
     
   if(scrollPercent >= 13.5 && scrollPercent <= 76){
     atFood = true;
+    animationThirdTrigger.playSegments([23,24], true);
   } else {
     atFood = false;
   }
@@ -144,23 +145,34 @@ document.addEventListener('DOMContentLoaded', function () {
   
   const containerOne = document.getElementsByClassName("navBinSelectors")[0];
   const containerTwo = document.getElementsByClassName("navBinSelectors")[1];
-  const animation = document.getElementById("thirdAnim");
-  const animationTrigger = animation.getLottie();
-  let animationCompletedOne = true;
+  const containerThree = document.getElementsByClassName("navBinSelectors2")[0];
+  const containerFour = document.getElementsByClassName("navBinSelectors2")[1];
+  const containerFive = document.getElementsByClassName("navBinSelectors3")[0];
+  const containerSix = document.getElementsByClassName("navBinSelectors3")[1];
+  const containerSeven = document.getElementsByClassName("navBinSelectors")[2];
+  const containerEight = document.getElementsByClassName("navBinSelectors")[3];
   
+  let animationCompletedOne = true;
+  let animationCompletedTwo = true;
+  let animationCompletedThree = true;
+
   containerOne.addEventListener("click", () => {
     console.log("First Button Hit");
-    if (animationCompleted) {
-      animationTrigger.playSegments([27, 42], true);      
-      animationCompleted = false;
+    if (animationCompletedOne) {
+      animationThirdTrigger.playSegments([27, 42], true);      
+      animationCompletedOne = false;
     }
   });
   
   containerTwo.addEventListener("click", () => {
     console.log("Second Button Hit");
-    if (animationCompleted) {
-      animationTrigger.playSegments([43, 58], true);  
-      animationCompleted = false;
+    if(atFood == true)
+    {
+      return;
+    }
+    if (animationCompletedOne) {
+      animationThirdTrigger.playSegments([43, 58], true);  
+      animationCompletedOne = false;
     }
 
     if(atFood !== true) {
@@ -168,26 +180,166 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   
-  animationTrigger.addEventListener("complete", () => {
-      animationCompleted = true;
+  animationThirdTrigger.addEventListener("complete", () => {
+    animationCompletedOne = true;
   });
   
   containerOne.addEventListener("mouseover", () => {
     console.log("First button Hover");
-    animationTrigger.playSegments([20, 21], true);  
+    if(atFood)
+    {
+      animationThirdTrigger.playSegments([17,18], true);
+    }
+    else
+    {
+      animationThirdTrigger.playSegments([20, 21], true);  
+    }
   });
   
   containerOne.addEventListener("mouseout", () => {
-    animationTrigger.playSegments([17, 18], true);  
+    if(atFood)
+    {
+      animationThirdTrigger.playSegments([23,24], true);
+    }
+    else
+    {
+      animationThirdTrigger.playSegments([15, 16], true);  
+    }  
   });
   
   containerTwo.addEventListener("mouseover", () => {
     console.log("Second button Hover");
-    animationTrigger.playSegments([23, 24], true); 
+    
+      animationThirdTrigger.playSegments([23, 24], true);  
+  
   });
   
   containerTwo.addEventListener("mouseout", () => {
-    animationTrigger.playSegments([17, 18], true);  
+    if(atFood)
+    {
+      animationThirdTrigger.playSegments([23,24], true);
+    }
+    else
+    {
+      animationThirdTrigger.playSegments([15, 16], true);  
+    } 
+  });
+
+  containerSeven.addEventListener("click", () => {
+    console.log("First Button Hit");
+    if (animationCompletedThree) {
+      animationFifthTrigger.playSegments([27, 42], true);      
+      animationCompletedThree = false;
+    }
+  });
+  
+  containerEight.addEventListener("click", () => {
+    console.log("Second Button Hit");
+    if (animationCompletedThree) {
+      animationFifthTrigger.playSegments([43, 58], true);  
+      animationCompletedThree = false;
+    }
+  });
+  
+  animationFifthTrigger.addEventListener("complete", () => {
+    animationCompletedThree = true;
+  });
+  
+  containerSeven.addEventListener("mouseover", () => {
+    console.log("First button Hover");
+      animationFifthTrigger.playSegments([20, 21], true);  
+  });
+  
+  containerSeven.addEventListener("mouseout", () => {
+      animationFifthTrigger.playSegments([15, 16], true);  
+  });
+  
+  containerEight.addEventListener("mouseover", () => {
+    console.log("Second button Hover");  
+    animationFifthTrigger.playSegments([23, 24], true);  
+  
+  });
+  
+  containerEight.addEventListener("mouseout", () => {
+      animationFifthTrigger.playSegments([15, 16], true);  
+  });
+
+  containerThree.addEventListener("click", () => {
+    console.log("First Button Hit");
+    if (animationCompletedTwo) {
+      animationForthTrigger.playSegments([27, 42], true);      
+      animationCompletedTwo = false;
+    }
+  });
+  
+  containerFour.addEventListener("click", () => {
+    console.log("Second Button Hit");
+    if (animationCompletedTwo) {
+      animationForthTrigger.playSegments([43, 58], true);  
+      animationCompletedTwo = false;
+    }
+  });
+  
+  animationForthTrigger.addEventListener("complete", () => {
+    animationCompletedTwo = true;
+  });
+  
+  containerThree.addEventListener("mouseover", () => {
+    console.log("First button Hover");
+    animationForthTrigger.playSegments([20, 21], true);  
+  });
+  
+  containerThree.addEventListener("mouseout", () => {
+    animationForthTrigger.playSegments([15, 16], true);  
+  });
+  
+  containerFour.addEventListener("mouseover", () => {
+    console.log("Second button Hover");  
+    animationForthTrigger.playSegments([23, 24], true);  
+  
+  });
+  
+  containerFour.addEventListener("mouseout", () => {
+    animationForthTrigger.playSegments([15, 16], true);  
+  });
+
+  containerFive.addEventListener("click", () => {
+    console.log("First Button Hit");
+    if (animationCompletedTwo) {
+      animationForthTrigger.playSegments([46, 59], true);      
+      animationCompletedTwo = false;
+    }
+  });
+  
+  containerSix.addEventListener("click", () => {
+    console.log("Second Button Hit");
+    if (animationCompletedTwo) {
+      animationForthTrigger.playSegments([43, 58], true);  
+      animationCompletedTwo = false;
+    }
+  });
+  
+  animationForthTrigger.addEventListener("complete", () => {
+    animationCompletedTwo = true;
+  });
+  
+  containerFive.addEventListener("mouseover", () => {
+    console.log("First button Hover");
+    animationForthTrigger.playSegments([26, 27], true);  
+  });
+  
+  containerFive.addEventListener("mouseout", () => {
+    animationForthTrigger.playSegments([15, 16], true);  
+  });
+  
+  containerSix.addEventListener("mouseover", () => {
+    console.log("Second button Hover");  
+    animationForthTrigger.playSegments([29, 30], true);  
+  
+  });
+  
+  containerSix.addEventListener("mouseout", () => {
+    animationForthTrigger.playSegments([15, 16], true);  
   });
 
   scrollLottie({
@@ -199,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   scrollLottie({
     target: '#animationWindow',
-    path: "https://lottie.host/22795313-1fec-4f32-9ffb-27692f1b22f7/RFisr93SLw.json", 
+    path: "https://lottie.host/7429d52d-97c1-428a-8d08-c1a2ad3af0e2/iD8NjW0N6Q.json", 
     duration: 4, 
     speed: 'slow'
    })

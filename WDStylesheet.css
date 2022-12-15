@@ -76,7 +76,7 @@ body {
     .navBin {
         position: relative;
         height: 50%;
-        bottom: 80%;
+        bottom: 85%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -89,6 +89,30 @@ body {
         top: -60%;
         left: 12%;
         margin: 9%;
+    }
+
+    .navBinSelectors2{
+        pointer-events: auto;
+        position: relative;
+        width: 20%;
+        height: 23%;
+        top: -75%;
+        left: 12%;
+        margin-top: 17%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+
+    .navBinSelectors3{
+        pointer-events: auto;
+        position: relative;
+        width: 20%;
+        height: 23%;
+        top: -75%;
+        left: 12%;
+        margin-top: 1%;
+        margin-left: 9%;
+        margin-right: 9%;
     }
 
     /* MAIN SCROLLING ELEMENT*/
@@ -270,7 +294,7 @@ body {
 }
 
 .animBackground{
-    width: 100%;
+    width: 101%;
     position: fixed;
     top: 0;
     background: linear-gradient(
@@ -281,7 +305,8 @@ body {
         #a8c7c2 100%,
     );
     z-index: -1000;
-    padding-top: 6%;
+    padding-top: 6.5%;
+    margin-left: -1%;
     pointer-events: none;
 }
 
