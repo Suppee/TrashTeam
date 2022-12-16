@@ -242,9 +242,10 @@ body {
     }
 
     #Spil{
-        margin-top: 50%;
-        margin-bottom: 50%;
+        margin-top: 30%;
+        -webkit-text-stroke: 1px #000000;
     }
+    
     #trashBagTop{
         width:102%;
         height:auto;
@@ -258,6 +259,13 @@ body {
         height:auto;
         left: -1.35%;
         margin-top: -1%;
+    }
+
+    #game
+    {
+        width: 552; 
+        height: 167; 
+        margin-bottom: 50%;
     }
 
 
