@@ -161,7 +161,11 @@ body {
         height: 100px;
         line-height: 60px;
         font-size: 60px;
+<<<<<<< Updated upstream
         color: white;
+=======
+        color: #2c2b2b;
+>>>>>>> Stashed changes
     }
 
     h2 {
