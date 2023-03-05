@@ -206,6 +206,11 @@ h6 {
   font-size: 40px;
 }
 
+mark {
+  background-color: transparent;
+  color: #39b54a;
+}
+
 .green {
   color: #39b54a;
 }
