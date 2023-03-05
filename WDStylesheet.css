@@ -1,5 +1,28 @@
 :root {
-  --clr-primary: ;
+  /* Odense Renovation Colors */
+  --clr-primary-green: #1a873a;
+  --clr-primary-yellow: #ffec00;
+  --clr-primary-red: #b20215;
+  --clr-primary-blue: #4b92d1;
+  --clr-primart-purple: #613c74;
+  --clr-primary-cyan: #9ccac9;
+  --clr-primary-lime: #c3ce1c;
+  --clr-primary-orange: #d78300;
+  --clr-light: #e6e6e6;
+  --clr-dark: #212125;
+  --clr-gray: #96969a;
+
+  --clr-primary-green-variant: #39b54a;
+
+  /* Miljoestyrelsen */
+  --clr-miljoestyrelsen-green: #1cb158;
+  --clr-miljoestyrelsen-brown: #bc9a6a;
+  --clr-miljoestyrelsen-blue: #0283c4;
+  --clr-miljoestyrelsen-gray: #566b7c;
+  --clr-miljoestyrelsen-cyan: #60c3ae;
+  --clr-miljoestyrelsen-purple: #913394;
+  --clr-miljoestyrelsen-red: #e20f1e;
+  --clr-miljoestyrelsen-black: #141414;
 }
 
 body {
@@ -8,8 +31,8 @@ body {
   text-align: center;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: xx-large;
-  background-color: #a8c7c2;
-  color: #2c2b2b;
+  background-color: var(--clr-primary-cyan);
+  color: var(--clr-dark);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -31,7 +54,7 @@ body {
 /* Progress Bar*/
 #progressbar {
   --scrollAmount: 0%;
-  background-color: #ffce00;
+  background-color: var(--clr-primary-yellow);
   width: var(--scrollAmount);
   height: 1rem;
   position: fixed;
@@ -127,12 +150,10 @@ body {
 
 /* Body Classes */
 .BodyHeader {
-  height: auto;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffff00;
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--clr-dark);
 }
 
 .BodyImg {
@@ -163,7 +184,7 @@ h1 {
   height: 100px;
   line-height: 60px;
   font-size: 60px;
-  color: white;
+  color: var(--clr-light);
 }
 
 h2 {
@@ -173,17 +194,17 @@ h2 {
   height: 100px;
   line-height: 60px;
   font-size: 60px;
-  color: #e6e6e6;
+  color: var(--clr-light);
 }
 
 h3 {
   width: 100%;
-  color: #e6e6e6;
+  color: var(--clr-light);
 }
 
 /* Section Classes*/
 h4 {
-  color: #e6e6e6;
+  color: var(--clr-light);
 }
 
 /* Section Classes*/
@@ -208,14 +229,11 @@ h6 {
 
 mark {
   background-color: transparent;
-  color: #39b54a;
+  color: var(--clr-primary-green-variant);
 }
 
-.green {
-  color: #39b54a;
-}
-.red {
-  color: #ffce00;
+.yellow {
+  color: var(--clr-primary-yellow);
 }
 
 .section {
@@ -280,29 +298,29 @@ mark {
   color: white;
 }
 #Mad {
-  background-color: #1cb158;
+  background-color: var(--clr-miljoestyrelsen-green);
 }
 
 /* Gruppe 2 */
 #Pap {
-  background-color: #bc9a6a;
+  background-color: var(--clr-miljoestyrelsen-brown);
 }
 #Papir {
-  background-color: #0283c4;
+  background-color: var(--clr-miljoestyrelsen-blue);
 }
 #Metal {
-  background-color: #566b7c;
+  background-color: var(--clr-miljoestyrelsen-gray);
 }
 #Glas {
-  background-color: #60c3ae;
+  background-color: var(--clr-miljoestyrelsen-cyan);
 }
 
 /* Gruppe 3 */
 #Karton {
-  background-color: #bc9a6a;
+  background-color: var(--clr-miljoestyrelsen-brown);
 }
 #Plast {
-  background-color: #913394;
+  background-color: var(--clr-miljoestyrelsen-purple);
 }
 
 .animBackground {
