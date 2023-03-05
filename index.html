@@ -6,6 +6,8 @@
     <title>Team Trash</title>
 
     <link rel="stylesheet" type="text/css" href="WDStylesheet.css" />
+
+    <!-- Scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -17,6 +19,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- deferred Scripts -->
     <script
       defer
       src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"
@@ -24,11 +27,12 @@
     <script defer type="text/javascript" src="main.js"></script>
   </head>
   <body>
-    <!-- Progress bar at top of page-->
+    <!-- Progress bar -->
     <div id="progressbar">
       <img src="Billeder/Skraldebil.png" alt="Skraldebil" />
     </div>
 
+    <!-- Page Content -->
     <main id="main">
       <!-- Intro Title-->
       <div class="BodyHeader">
@@ -44,54 +48,13 @@
         </p>
       </div>
 
-      <!-- Transition Animation -->
+      <!-- Background -->
       <div class="animBackground">
         <lottie-player
           id="firstAnim"
           src="https://lottie.host/fa087bb9-2f2f-450a-9d63-093d11609a4e/aBKR5z7Ftb.json"
         >
         </lottie-player>
-      </div>
-
-      <!-- Navigation bar at bottom of page-->
-      <div class="navbackground">
-        <lottie-player
-          id="secondAnim"
-          src="https://lottie.host/8937e43b-1b85-4c68-a095-d499448f416b/v75J5DmCvM.json"
-        >
-        </lottie-player>
-
-        <div class="navbar">
-          <div class="navBin">
-            <lottie-player
-              id="thirdAnim"
-              src="https://lottie.host/3df38470-62ff-435f-ba9f-f99525a47324/mjij30brOm.json"
-            >
-            </lottie-player>
-            <div class="navBinSelectors"></div>
-            <div class="navBinSelectors"></div>
-          </div>
-          <div class="navBin">
-            <lottie-player
-              id="forthAnim"
-              src="https://lottie.host/9ac42150-f38a-4fd9-b154-955048179ec1/B8J7SxxgXQ.json"
-            >
-            </lottie-player>
-            <div class="navBinSelectors2"></div>
-            <div class="navBinSelectors2"></div>
-            <div class="navBinSelectors3"></div>
-            <div class="navBinSelectors3"></div>
-          </div>
-          <div class="navBin">
-            <lottie-player
-              id="fifthAnim"
-              src="https://lottie.host/cea5654f-f442-4635-acb1-4271811abf72/PgRcyQrjkt.json"
-            >
-            </lottie-player>
-            <div class="navBinSelectors"></div>
-            <div class="navBinSelectors"></div>
-          </div>
-        </div>
       </div>
 
       <section id="scrollBody">
@@ -205,6 +168,47 @@
           >
         </div>
       </section>
+
+      <!-- Navigation bar at bottom of page-->
+      <div class="navbackground">
+        <lottie-player
+          id="secondAnim"
+          src="https://lottie.host/8937e43b-1b85-4c68-a095-d499448f416b/v75J5DmCvM.json"
+        >
+        </lottie-player>
+
+        <nav class="navbar">
+          <div class="navBin">
+            <lottie-player
+              id="thirdAnim"
+              src="https://lottie.host/3df38470-62ff-435f-ba9f-f99525a47324/mjij30brOm.json"
+            >
+            </lottie-player>
+            <div class="navBinSelectors"></div>
+            <div class="navBinSelectors"></div>
+          </div>
+          <div class="navBin">
+            <lottie-player
+              id="forthAnim"
+              src="https://lottie.host/9ac42150-f38a-4fd9-b154-955048179ec1/B8J7SxxgXQ.json"
+            >
+            </lottie-player>
+            <div class="navBinSelectors2"></div>
+            <div class="navBinSelectors2"></div>
+            <div class="navBinSelectors3"></div>
+            <div class="navBinSelectors3"></div>
+          </div>
+          <div class="navBin">
+            <lottie-player
+              id="fifthAnim"
+              src="https://lottie.host/cea5654f-f442-4635-acb1-4271811abf72/PgRcyQrjkt.json"
+            >
+            </lottie-player>
+            <div class="navBinSelectors"></div>
+            <div class="navBinSelectors"></div>
+          </div>
+        </nav>
+      </div>
     </main>
   </body>
 </html>
