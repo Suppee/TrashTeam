@@ -1,6 +1,7 @@
 :root {
   /* Odense Renovation Colors */
   --clr-primary-green: #1a873a;
+  --clr-primary-green-variant: #39b54a;
   --clr-primary-yellow: #ffec00;
   --clr-primary-red: #b20215;
   --clr-primary-blue: #4b92d1;
@@ -11,8 +12,6 @@
   --clr-light: #e6e6e6;
   --clr-dark: #212125;
   --clr-gray: #96969a;
-
-  --clr-primary-green-variant: #39b54a;
 
   /* Miljoestyrelsen */
   --clr-miljoestyrelsen-green: #1cb158;
@@ -26,9 +25,8 @@
 }
 
 body {
-  margin: auto;
+  margin: 0;
   padding: 0;
-  text-align: center;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: xx-large;
   background-color: var(--clr-primary-cyan);
@@ -38,7 +36,6 @@ body {
   background-size: 100%;
   background-size: cover;
   background-position: center;
-  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -49,6 +46,11 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+main {
+  text-align: center;
+  margin: auto;
 }
 
 /* Progress Bar*/
@@ -90,8 +92,7 @@ body {
   white-space: nowrap;
   display: flex;
   justify-content: space-between;
-  margin-left: 27%;
-  margin-right: 27%;
+  margin-inline: 27%;
 }
 
 #navimg {
@@ -151,8 +152,7 @@ body {
 /* Body Classes */
 .BodyHeader {
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   -webkit-text-stroke: 1px var(--clr-dark);
 }
 
@@ -181,7 +181,6 @@ h1 {
   margin: 0px auto;
   padding-bottom: 2%;
   padding-top: 20%;
-  height: 100px;
   line-height: 60px;
   font-size: 60px;
   color: var(--clr-light);
@@ -244,7 +243,9 @@ mark {
   height: auto;
   margin-right: 10%;
   margin-left: 10%;
+  color: var(--clr-light);
 }
+
 .moreInfo {
   height: auto;
   margin-top: 10%;
@@ -324,9 +325,8 @@ mark {
 }
 
 .animBackground {
-  width: 101%;
   position: fixed;
-  top: 0;
+  inset: 0;
   background: linear-gradient(
     to top,
     #bcb753 0%,

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="da" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Trash</title>
 
     <link rel="stylesheet" type="text/css" href="WDStylesheet.css" />
@@ -30,174 +29,182 @@
       <img src="Billeder/Skraldebil.png" alt="Skraldebil" />
     </div>
 
-    <!-- Intro Title-->
-    <div class="BodyHeader">
-      <h1 id="Title">
-        Her i Odense skal vi sortere efter
-        <mark>8 affaldstyper.</mark>
-      </h1>
-      <h5 class="Subtitle">
-        <mark>Scroll </mark> videre ned på siden for at få mere at vide.
-      </h5>
-      <h6 class="Subtitle">
-        Eller <mark>klik</mark> på en af <mark>de 8 ikoner</mark>, som er
-        placeret på skraldespandene.
-      </h6>
-    </div>
+    <main id="main">
+      <!-- Intro Title-->
+      <div class="BodyHeader">
+        <h1 id="Title">
+          Her i Odense skal vi sortere efter <mark>8 affaldstyper</mark>
+        </h1>
+        <p class="Subtitle">
+          <mark>Scroll </mark> videre ned på siden for at få mere at vide.
+        </p>
+        <p class="Subtitle">
+          Eller <mark>klik</mark> på en af <mark>de 8 ikoner</mark>, som er
+          placeret på skraldespandene.
+        </p>
+      </div>
 
-    <div class="animBackground">
-      <lottie-player
-        id="firstAnim"
-        src="https://lottie.host/fa087bb9-2f2f-450a-9d63-093d11609a4e/aBKR5z7Ftb.json"
-      >
-      </lottie-player>
-    </div>
+      <!-- Transition Animation -->
+      <div class="animBackground">
+        <lottie-player
+          id="firstAnim"
+          src="https://lottie.host/fa087bb9-2f2f-450a-9d63-093d11609a4e/aBKR5z7Ftb.json"
+        >
+        </lottie-player>
+      </div>
 
-    <!-- Navigation bar at bottom of page-->
-    <div class="navbackground">
-      <lottie-player
-        id="secondAnim"
-        src="https://lottie.host/8937e43b-1b85-4c68-a095-d499448f416b/v75J5DmCvM.json"
-      >
-      </lottie-player>
-      <div class="navbar">
-        <div class="navBin">
-          <lottie-player
-            id="thirdAnim"
-            src="https://lottie.host/3df38470-62ff-435f-ba9f-f99525a47324/mjij30brOm.json"
-          >
-          </lottie-player>
-          <div class="navBinSelectors"></div>
-          <div class="navBinSelectors"></div>
-        </div>
-        <div class="navBin">
-          <lottie-player
-            id="forthAnim"
-            src="https://lottie.host/9ac42150-f38a-4fd9-b154-955048179ec1/B8J7SxxgXQ.json"
-          >
-          </lottie-player>
-          <div class="navBinSelectors2"></div>
-          <div class="navBinSelectors2"></div>
-          <div class="navBinSelectors3"></div>
-          <div class="navBinSelectors3"></div>
-        </div>
-        <div class="navBin">
-          <lottie-player
-            id="fifthAnim"
-            src="https://lottie.host/cea5654f-f442-4635-acb1-4271811abf72/PgRcyQrjkt.json"
-          >
-          </lottie-player>
-          <div class="navBinSelectors"></div>
-          <div class="navBinSelectors"></div>
+      <!-- Navigation bar at bottom of page-->
+      <div class="navbackground">
+        <lottie-player
+          id="secondAnim"
+          src="https://lottie.host/8937e43b-1b85-4c68-a095-d499448f416b/v75J5DmCvM.json"
+        >
+        </lottie-player>
+
+        <div class="navbar">
+          <div class="navBin">
+            <lottie-player
+              id="thirdAnim"
+              src="https://lottie.host/3df38470-62ff-435f-ba9f-f99525a47324/mjij30brOm.json"
+            >
+            </lottie-player>
+            <div class="navBinSelectors"></div>
+            <div class="navBinSelectors"></div>
+          </div>
+          <div class="navBin">
+            <lottie-player
+              id="forthAnim"
+              src="https://lottie.host/9ac42150-f38a-4fd9-b154-955048179ec1/B8J7SxxgXQ.json"
+            >
+            </lottie-player>
+            <div class="navBinSelectors2"></div>
+            <div class="navBinSelectors2"></div>
+            <div class="navBinSelectors3"></div>
+            <div class="navBinSelectors3"></div>
+          </div>
+          <div class="navBin">
+            <lottie-player
+              id="fifthAnim"
+              src="https://lottie.host/cea5654f-f442-4635-acb1-4271811abf72/PgRcyQrjkt.json"
+            >
+            </lottie-player>
+            <div class="navBinSelectors"></div>
+            <div class="navBinSelectors"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="scrollBody">
-      <!-- Main Text Body-->
-      <div id="trashBagTop"></div>
-      <!-- Mad Kategori -->
+      <section id="scrollBody">
+        <!-- Main Text Body-->
+        <div id="trashBagTop"></div>
+        <!-- Mad Kategori -->
 
-      <div class="section" id="Mad">
-        <!-- Restaffald Sticky Header -->
-        <div class="sticky">
-          <h1 id="Mad">Madaffald</h1>
-        </div>
+        <div class="section" id="Mad">
+          <!-- Restaffald Sticky Header -->
+          <h2 id="Mad">Madaffald</h2>
 
-        <!-- Hvad Restaffald Afsnit -->
-        <div class="sectionBody">
-          <h3>
-            Madaffald er affaldet, der kommer
-            <mark class="yellow"> direkte fra madlavning. </mark> Madaffald er
-            dog <mark class="yellow">ikke </mark>den gamle grøn affald.
-          </h3>
-          <img class="BodyImg" src="Mad Oversigt.png" alt="Ble" />
-        </div>
-        <div class="sectionBody">
-          <div class="moreInfo">
-            <lottie-player
-              id="sixAnim"
-              src="https://lottie.host/534d6575-a5e8-4140-a7ce-4296686adcb3/UU0MryHTlf.json"
-            >
-            </lottie-player>
-            <lottie-player
-              id="sevenAnim"
-              src="https://lottie.host/bd3cb08d-e195-4573-ae25-0e50d07b8de8/UPXh2XymJ0.json"
-            >
-            </lottie-player>
-            <lottie-player
-              id="eightAnim"
-              src="https://lottie.host/3eef73b9-bc52-47f8-a7c3-7d669af9ec04/Ag7hsefyMr.json"
-            >
-            </lottie-player>
+          <!-- Hvad Restaffald Afsnit -->
+          <div class="sectionBody">
+            <p>
+              Madaffald er affaldet, der kommer
+              <mark class="yellow"> direkte fra madlavning. </mark> Madaffald er
+              dog <mark class="yellow">ikke </mark>den gamle grøn affald.
+            </p>
+            <img class="BodyImg" src="Mad Oversigt.png" alt="Ble" />
           </div>
-          <h4>
-            Få mere at vide ved <mark class="yellow">at trykke</mark> på
-            produkterne.
-          </h4>
-        </div>
 
-        <!-- Hvorfor Restaffald Afsnit -->
-        <div class="sectionBody">
-          <h3>
-            Når du sorterer madaaffald bidrager du med, at vi bruger færre nye
-            ressourcer.
-          </h3>
-        </div>
+          <div class="sectionBody">
+            <div class="moreInfo">
+              <lottie-player
+                id="sixAnim"
+                src="https://lottie.host/534d6575-a5e8-4140-a7ce-4296686adcb3/UU0MryHTlf.json"
+              >
+              </lottie-player>
+              <lottie-player
+                id="sevenAnim"
+                src="https://lottie.host/bd3cb08d-e195-4573-ae25-0e50d07b8de8/UPXh2XymJ0.json"
+              >
+              </lottie-player>
+              <lottie-player
+                id="eightAnim"
+                src="https://lottie.host/3eef73b9-bc52-47f8-a7c3-7d669af9ec04/Ag7hsefyMr.json"
+              >
+              </lottie-player>
+            </div>
 
-        <div class="sectionBody">
-          <div id="animationWindow"></div>
-        </div>
-
-        <div class="sectionBody">
-          <h3>Husk madaffald <mark class="yellow"> skal</mark> i poser.</h3>
-          <div class="bagInfo">
-            <lottie-player
-              id="nineAnim"
-              src="https://lottie.host/4c3f2f54-d139-471d-8e4d-f974d86ec343/pPO22gcZA0.json"
-            >
-            </lottie-player>
+            <p>
+              Få mere at vide ved <mark class="yellow">at trykke</mark> på
+              produkterne.
+            </p>
           </div>
-          <h3>MANGLER DU POSER?</h3>
-          <h4>
-            Odense Renovation udleverer de grønne poser. Er du ved at løbe tør
-            for madaffaldsposer, så <mark class="yellow">binder</mark> du en
-            pose på håndtaget af beholderen til restaffald og madaffald, så
-            lægger skraldemanden <mark class="yellow">nye poser</mark> oven på
-            beholderen efter næste tømning.
-          </h4>
-          <h4>
-            Bor du til leje, hvor der er fællesbeholdere, skal du kontakte din
-            vicevært.
-          </h4>
+
+          <!-- Hvorfor Restaffald Afsnit -->
+          <div class="sectionBody">
+            <h3>
+              Når du sorterer madaaffald bidrager du med, at vi bruger færre nye
+              ressourcer.
+            </h3>
+          </div>
+
+          <div class="sectionBody">
+            <div id="animationWindow"></div>
+          </div>
+
+          <div class="sectionBody">
+            <h3>Husk madaffald <mark class="yellow"> skal</mark> i poser.</h3>
+            <div class="bagInfo">
+              <lottie-player
+                id="nineAnim"
+                src="https://lottie.host/4c3f2f54-d139-471d-8e4d-f974d86ec343/pPO22gcZA0.json"
+              >
+              </lottie-player>
+            </div>
+            <h3>MANGLER DU POSER?</h3>
+            <p>
+              Odense Renovation udleverer de grønne poser. Er du ved at løbe tør
+              for madaffaldsposer, så <mark class="yellow">binder</mark> du en
+              pose på håndtaget af beholderen til restaffald og madaffald, så
+              lægger skraldemanden <mark class="yellow">nye poser</mark> oven på
+              beholderen efter næste tømning.
+            </p>
+            <p>
+              Bor du til leje, hvor der er fællesbeholdere, skal du kontakte din
+              vicevært.
+            </p>
+          </div>
         </div>
-      </div>
-      <div id="trashBagBottom"></div>
+        <div id="trashBagBottom"></div>
 
-      <h3>Hvis du er i tvivl</h3>
-      <h3>
-        Odense Renovation har lavet en
-        <a
-          href="https://www.odenserenovation.dk/sorteringsguide/"
-          class="yellow"
-          >sorteringsguide</a
-        >, hvor du kan finde ud af, hvordan du
-        <mark class="yellow"> skal sortere </mark> forskellige mad- og
-        fødevarer.
-      </h3>
-    </div>
+        <section>
+          <h3>Hvis du er i tvivl</h3>
+          <p>
+            Odense Renovation har lavet en
+            <a
+              href="https://www.odenserenovation.dk/sorteringsguide/"
+              class="yellow"
+              >sorteringsguide</a
+            >, hvor du kan finde ud af, hvordan du
+            <mark class="yellow"> skal sortere </mark> forskellige mad- og
+            fødevarer.
+          </p>
+        </section>
+      </section>
 
-    TRASH SORTING GAME
-    <div id="sticky">
-      <h2 id="Spil">Sorterings Spillet</h2>
-      <iframe
-        id="game"
-        width="552"
-        height="167"
-        frameborder="0"
-        src="https://itch.io/embed/1839210"
-        ><a href="https://mkofoed.itch.io/tg">TG by mkofoed</a></iframe
-      >
-    </div>
+      <!-- Videospil -->
+      <section>
+        <div id="sticky">
+          <h2 id="Spil">Sorterings Spillet</h2>
+          <iframe
+            title="Sortering Spil"
+            id="game"
+            width="552"
+            height="167"
+            frameborder="0"
+            src="https://itch.io/embed/1839210"
+            ><a href="https://mkofoed.itch.io/tg">TG by mkofoed</a></iframe
+          >
+        </div>
+      </section>
+    </main>
   </body>
 </html>
