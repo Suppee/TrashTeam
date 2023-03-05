@@ -1,335 +1,330 @@
-    body {
-    margin: auto;
-    padding: 0px;
-    text-align: center;
-    width: 100%;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: xx-large;
-    background-color: #a8c7c2;
-    color: #2c2b2b;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-    background-position: center;
-    overflow-y: scroll;
+:root {
+  --clr-primary: ;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: xx-large;
+  background-color: #a8c7c2;
+  color: #2c2b2b;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-
-    /* Progress Bar*/
+/* Progress Bar*/
 #progressbar {
-        --scrollAmount: 0%;
-        background-color: #ffce00;
-        width: var(--scrollAmount);
-        height: 20px;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-    }
-    #truck {
-        background-image: url("Billeder/Skraldebil.png");
-        position:fixed;
-        background-repeat: no-repeat;
-        background-size: 3%;
-        background-position-x: var(--scrollAmount);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        pointer-events: none;
-    }
-
-    /* Navigation Bar*/
-    .navbackground{
-        overflow: visible;
-        float: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: fixed;
-        bottom: -15%;
-        width: 100%;
-        height: 50%;
-        z-index: 1;
-    }
-    .navbar{
-        height: 85%;
-        white-space: nowrap;
-        display: flex ;
-        justify-content: space-between;
-        margin-left: 27%;
-        margin-right: 27%;
-    }
-
-    #navimg{
-        width:55%;
-    }
-    .navBin {
-        position: relative;
-        height: 80%;
-        bottom: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .navBinSelectors{
-        pointer-events: auto;
-        position: relative;
-        width: 20%;
-        height: 23%;
-        top: -60%;
-        left: 12%;
-        margin: 9%;
-    }
-
-    .navBinSelectors2{
-        pointer-events: auto;
-        position: relative;
-        width: 20%;
-        height: 23%;
-        top: -75%;
-        left: 12%;
-        margin-top: 17%;
-        margin-left: 9%;
-        margin-right: 9%;
-    }
-
-    .navBinSelectors3{
-        pointer-events: auto;
-        position: relative;
-        width: 20%;
-        height: 23%;
-        top: -75%;
-        left: 12%;
-        margin-top: 1%;
-        margin-left: 9%;
-        margin-right: 9%;
-    }
-
-    /* MAIN SCROLLING ELEMENT*/
-    /* Main Scrolling ID */
-    #scrollBody {
-    justify-content: center;
-    margin: auto;
-    width: 80%;
-    z-index: 5;
+  --scrollAmount: 0%;
+  background-color: #ffce00;
+  width: var(--scrollAmount);
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  transition: width 150ms;
 }
 
-    /* Body Classes */
-    .BodyHeader {
-    height: auto;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff00;
-    -webkit-text-stroke: 1px #000000;
-    }
-
-    .BodyImg{
-    width: 120%;
-    height: auto;
-    margin-left: -5%;
-    margin-top: 10%;
-    }
-    .BodyImgTwo{
-    width: 30%;
-    height: auto;
-    margin-left: -10%;
-    margin-top: 10%;
-    }
-
-    #sixAnim, #sevenAnim, #eightAnim
-    {
-        cursor: pointer;
-    }
-
-    /* Trash Sorting Category Header*/
-    h1 {
-        width: 100%;
-        margin: 0px auto;
-        padding-bottom: 2%;
-        padding-top: 20%;
-        height: 100px;
-        line-height: 60px;
-        font-size: 60px;
-<<<<<<< Updated upstream
-        color: white;
-=======
-        color: #2c2b2b;
->>>>>>> Stashed changes
-    }
-
-    h2 {
-        width: 100%;
-        margin: 0px auto;
-        padding-bottom: 2%;
-        height: 100px;
-        line-height: 60px;
-        font-size: 60px;
-        color: #e6e6e6;
-    }
-
-    h3 {
-        width: 100%;
-        color: #e6e6e6;
-
-    }
-
-    /* Section Classes*/
-    h4 {
-        color: #e6e6e6;
-    }
-
-    /* Section Classes*/
-    h5 {
-        width: 100%;
-        margin: 0px auto;
-        padding-bottom: 20%;
-        padding-top: 20%;
-        height: 100px;
-        line-height: 60px;
-        font-size: 40px;
-    }
-    h6 {
-        width: 100%;
-        margin: 0px auto;
-        padding-bottom: 40%;
-        padding-top: 20%;
-        height: 100px;
-        line-height: 60px;
-        font-size: 40px;
-    }
-
-    .green { 
-        color: #39b54a; 
-    }
-    .red {
-        color: #ffce00;
-    }
-
-    .section {
-    margin-top:10%;
-    padding-bottom: 10%;
-    }   
-    .sectionBody {
-        height: auto;
-        margin-right: 10%;
-        margin-left: 10%;
-    }
-    .moreInfo {
-        height: auto;
-        margin-top:10%; 
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .bagInfo {
-        height: 33%;
-        width: 33%;
-        margin-left: 33%;
-    }
-
-    .sticky {
-        top: 0;
-        width: auto;
-        font-size: 20px;
-    }
-
-    #Spil{
-        margin-top: 30%;
-        -webkit-text-stroke: 1px #000000;
-    }
-    
-    #trashBagTop{
-        width:102%;
-        height:auto;
-        left: -1.35%;
-        margin-bottom: -11%;
-        margin-top: -20%;
-    }
-
-    #trashBagBottom{
-        width:102%;
-        height:auto;
-        left: -1.35%;
-        margin-top: -1%;
-    }
-
-    #game
-    {
-        width: 552; 
-        height: 167; 
-        margin-bottom: 50%;
-    }
-
-
-    /* AFFALDS KATEGORI IDS*/
-    /* Gruppe 1 */
-    #Rest {
-    background-color:black;
-    color: white;
-}
-    #Mad {
-    background-color: #1cb158;
+#progressbar img {
+  height: 1rem;
+  position: absolute;
+  right: 0;
+  transform: translateX(60%);
 }
 
-    /* Gruppe 2 */
-    #Pap {
-    background-color: #bc9a6a;
+/* Navigation Bar*/
+.navbackground {
+  overflow: visible;
+  float: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  bottom: -15%;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
 }
-    #Papir {
-    background-color: #0283c4;
-}
-    #Metal {
-    background-color: #566b7c;
-}
-    #Glas {
-    background-color: #60c3ae;
+.navbar {
+  height: 85%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 27%;
+  margin-right: 27%;
 }
 
-    /* Gruppe 3 */
-    #Karton {
-    background-color: #bc9a6a;
+#navimg {
+  width: 55%;
 }
-    #Plast {
-    background-color: #913394;
+.navBin {
+  position: relative;
+  height: 80%;
+  bottom: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.animBackground{
-    width: 101%;
-    position: fixed;
-    top: 0;
-    background: linear-gradient(
-        to top,
-        #bcb753 0%,
-        #bcb753 25%,
-        #a8c7c2 25%,
-        #a8c7c2 100%,
-    );
-    z-index: -1000;
-    padding-top: 6.5%;
-    margin-left: -1%;
-    pointer-events: none;
+.navBinSelectors {
+  pointer-events: auto;
+  position: relative;
+  width: 20%;
+  height: 23%;
+  top: -60%;
+  left: 12%;
+  margin: 9%;
+}
+
+.navBinSelectors2 {
+  pointer-events: auto;
+  position: relative;
+  width: 20%;
+  height: 23%;
+  top: -75%;
+  left: 12%;
+  margin-top: 17%;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.navBinSelectors3 {
+  pointer-events: auto;
+  position: relative;
+  width: 20%;
+  height: 23%;
+  top: -75%;
+  left: 12%;
+  margin-top: 1%;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+/* MAIN SCROLLING ELEMENT*/
+/* Main Scrolling ID */
+#scrollBody {
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  z-index: 5;
+}
+
+/* Body Classes */
+.BodyHeader {
+  height: auto;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff00;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.BodyImg {
+  width: 120%;
+  height: auto;
+  margin-left: -5%;
+  margin-top: 10%;
+}
+.BodyImgTwo {
+  width: 30%;
+  height: auto;
+  margin-left: -10%;
+  margin-top: 10%;
+}
+
+#sixAnim,
+#sevenAnim,
+#eightAnim {
+  cursor: pointer;
+}
+
+/* Trash Sorting Category Header*/
+h1 {
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 2%;
+  padding-top: 20%;
+  height: 100px;
+  line-height: 60px;
+  font-size: 60px;
+  color: white;
+}
+
+h2 {
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 2%;
+  height: 100px;
+  line-height: 60px;
+  font-size: 60px;
+  color: #e6e6e6;
+}
+
+h3 {
+  width: 100%;
+  color: #e6e6e6;
+}
+
+/* Section Classes*/
+h4 {
+  color: #e6e6e6;
+}
+
+/* Section Classes*/
+h5 {
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  height: 100px;
+  line-height: 60px;
+  font-size: 40px;
+}
+h6 {
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 40%;
+  padding-top: 20%;
+  height: 100px;
+  line-height: 60px;
+  font-size: 40px;
+}
+
+.green {
+  color: #39b54a;
+}
+.red {
+  color: #ffce00;
+}
+
+.section {
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+.sectionBody {
+  height: auto;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.moreInfo {
+  height: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bagInfo {
+  height: 33%;
+  width: 33%;
+  margin-left: 33%;
+}
+
+.sticky {
+  top: 0;
+  width: auto;
+  font-size: 20px;
+}
+
+#Spil {
+  margin-top: 30%;
+  -webkit-text-stroke: 1px #000000;
+}
+
+#trashBagTop {
+  width: 102%;
+  height: auto;
+  left: -1.35%;
+  margin-bottom: -11%;
+  margin-top: -20%;
+}
+
+#trashBagBottom {
+  width: 102%;
+  height: auto;
+  left: -1.35%;
+  margin-top: -1%;
+}
+
+#game {
+  width: 552;
+  height: 167;
+  margin-bottom: 50%;
+}
+
+/* AFFALDS KATEGORI IDS*/
+/* Gruppe 1 */
+#Rest {
+  background-color: black;
+  color: white;
+}
+#Mad {
+  background-color: #1cb158;
+}
+
+/* Gruppe 2 */
+#Pap {
+  background-color: #bc9a6a;
+}
+#Papir {
+  background-color: #0283c4;
+}
+#Metal {
+  background-color: #566b7c;
+}
+#Glas {
+  background-color: #60c3ae;
+}
+
+/* Gruppe 3 */
+#Karton {
+  background-color: #bc9a6a;
+}
+#Plast {
+  background-color: #913394;
+}
+
+.animBackground {
+  width: 101%;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(
+    to top,
+    #bcb753 0%,
+    #bcb753 25%,
+    #a8c7c2 25%,
+    #a8c7c2 100%
+  );
+  z-index: -1000;
+  padding-top: 6.5%;
+  margin-left: -1%;
+  pointer-events: none;
 }
 
 #animationWindow {
-    width: 125%;
-    height: 125%;
-    left: -12.5%
-   }
-.hide{
-    opacity: 0%;
+  width: 125%;
+  height: 125%;
+  left: -12.5%;
 }
-.show{
-    opacity: 100%;
+.hide {
+  opacity: 0%;
+}
+.show {
+  opacity: 100%;
 }

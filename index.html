@@ -3,17 +3,25 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
-        
+    <meta name="viewport" content="width=device-width" />
+    <title>Team Trash</title>
+
     <link rel="stylesheet" type="text/css" href="WDStylesheet.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.0/lottie.min.js" integrity="sha512-17otjw7eTNU9MtpB7mFfXEwB6yDjA2qjDFkKSvsywI1PRAgpyOo+cp/wPSE/1kK4fFjA9OKsZVO1tr93MGNCEw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- 
 </head>
 <body>
+
+    <!-- Progress bar at top of page-->
+    <div id="progressbar">
+        <img src="Billeder/Skraldebil.png" alt="Skraldebil">
+    </div>
+    <!-- <div id="progressbar">
+        <div id="truck"></div>
+    </div> -->
 
     <!-- Intro Title-->
     <div class="BodyHeader">
@@ -25,10 +33,8 @@
     <div class="animBackground">
     <lottie-player id="firstAnim" src="https://lottie.host/fa087bb9-2f2f-450a-9d63-093d11609a4e/aBKR5z7Ftb.json">
     </lottie-player></div>
-    <!-- Progress bar at top of page-->
-    <div id="progressbar">
-        <div id="truck"></div>
-    </div>
+
+
 
     <!-- Navigation bar at bottom of page-->
     <div class="navbackground">
@@ -63,7 +69,7 @@
         <!-- Main Text Body-->
         <div id="trashBagTop"></div>
         <!-- Mad Kategori -->
-        
+
         <div class="section" id="Mad">
 
             <!-- Restaffald Sticky Header -->
@@ -78,7 +84,7 @@
             <div class="sectionBody">
                 <h3>
                     Madaffald er affaldet, der kommer <span class="red"> direkte fra madlavning. </span>
-                    Madaffald er dog <span class="red">ikke </span>den gamle grøn affald. 
+                    Madaffald er dog <span class="red">ikke </span>den gamle grøn affald.
                 </h3>
                 <img class="BodyImg" src="Mad Oversigt.png" alt="Ble">
             </div>
@@ -90,52 +96,52 @@
                     </lottie-player>
                     <lottie-player id="eightAnim" src="https://lottie.host/3eef73b9-bc52-47f8-a7c3-7d669af9ec04/Ag7hsefyMr.json">
                     </lottie-player>
-                </div>  
-                <h4> 
+                </div>
+                <h4>
                     Få mere at vide ved <span class="red">at trykke</span> på produkterne.
-                </h4>  
+                </h4>
             </div>
 
             <!-- Hvorfor Restaffald Afsnit -->
             <div class="sectionBody">
-                <h3> 
+                <h3>
                     Når du sorterer madaaffald bidrager du med, at vi bruger færre nye ressourcer.
-                </h3> 
+                </h3>
             </div>
-            
+
             <div class="sectionBody">
                 <div id="animationWindow"></div>
             </div>
 
-            <div class="sectionBody"> 
+            <div class="sectionBody">
                 <h3>
-                    Husk madaffald <span class="red"> skal</span> i poser. 
+                    Husk madaffald <span class="red"> skal</span> i poser.
                 </h3>
                     <div class="bagInfo">
                         <lottie-player id="nineAnim" src="https://lottie.host/4c3f2f54-d139-471d-8e4d-f974d86ec343/pPO22gcZA0.json">
                         </lottie-player>
                     </div>
                 <h3> MANGLER DU POSER? </h3>
-                <h4>  
+                <h4>
                     Odense Renovation udleverer de grønne poser.
-                    Er du ved at løbe tør for madaffaldsposer, så <span class="red">binder</span> du en pose på 
-                    håndtaget af beholderen til restaffald og madaffald, 
+                    Er du ved at løbe tør for madaffaldsposer, så <span class="red">binder</span> du en pose på
+                    håndtaget af beholderen til restaffald og madaffald,
                     så lægger skraldemanden <span class="red">nye poser</span> oven på beholderen efter næste tømning.
                 </h4>
-                <h4>  
+                <h4>
                     Bor du til leje, hvor der er fællesbeholdere, skal du kontakte din vicevært.
                 </h4>
-                    
-            </div>           
+
+            </div>
 
         </div>
         <div id="trashBagBottom"></div>
-        
 
-        
+
+
         <h3> Hvis du er i tvivl </h3>
             <h3>
-                Odense Renovation har lavet en <span class="red"> sorteringsguide </span>, 
+                Odense Renovation har lavet en <span class="red"> sorteringsguide </span>,
                 hvor du kan finde ud af, hvordan du <span class="red"> skal sortere </span> forskellige mad- og fødevarer.
                 Du kan finde Odense Renovations sorteringsguide <a class="red" href="https://www.odenserenovation.dk/sorteringsguide/"> Her:</a>
             </h3>
@@ -148,6 +154,8 @@
         </div>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
