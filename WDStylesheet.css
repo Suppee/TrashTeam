@@ -238,13 +238,21 @@ header.hide {
   width: 60%;
   margin-inline: auto;
   -webkit-text-stroke: 1px var(--clr-dark);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8rem;
 }
 
 .bounce {
   position: absolute;
-  animation: bounce 2s ease-in-out infinite;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.bounce img {
+  animation: bounce 1s infinite;
+  width: 4rem;
 }
 
 .BodyImg {
@@ -385,7 +393,7 @@ header.hide {
 }
 
 /* Animations */
-@keyframes bounce {
+/* @keyframes bounce {
   0%,
   20%,
   50%,
@@ -398,5 +406,17 @@ header.hide {
   }
   60% {
     transform: translateY(-15px);
+  }
+} */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
