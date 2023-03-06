@@ -1,3 +1,8 @@
+// Header
+const header = document.getElementsByTagName("header")[0];
+let showHeader = true;
+let lastShowHeader = showHeader;
+
 var secondAnimPlayed = false;
 var atFood = false;
 
@@ -14,6 +19,8 @@ let animationFifthTrigger = animationFifth.getLottie();
 const progressbar = document.getElementById("progressbar");
 const truck = document.getElementById("truck");
 
+let lastScrollY = 0;
+
 let processScroll = () => {
   let docElem = document.documentElement;
   let docBody = document.body;
@@ -23,8 +30,26 @@ let processScroll = () => {
   let scrollPercent = (scrollTop / scrollBottom) * 100;
   let scrollPercentName = (scrollTop / scrollBottom) * 100 + "%";
 
+  showHeader = scrollTop < lastScrollY;
+  if (scrollTop <= header.offsetHeight) {
+    header.classList.remove("fixed");
+  } else {
+    header.classList.add("fixed");
+
+    if (showHeader) {
+      header.classList.remove("hide");
+    } else {
+      header.classList.add("hide");
+    }
+  }
+
+  // Update last scroll Y
+  lastShowHeader = showHeader;
+  lastScrollY = scrollTop;
+
   // Update '--scrolAmount' variable
   progressbar.style.setProperty("--scrollAmount", scrollPercentName);
+  progressbar.style.top = showHeader ? `${header.offsetHeight}px` : "0";
 
   // Hide truck on top and bottom
   if (scrollTop <= 32 || scrollBottom - scrollTop <= 32) {

@@ -35,7 +35,7 @@ html {
 body {
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-  font-size: xx-large;
+
   background-color: var(--clr-primary-cyan);
   color: var(--clr-dark);
 
@@ -84,6 +84,56 @@ section {
   padding-block: 3rem;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Header */
+header {
+  z-index: 999;
+  transform: translateY(0%);
+  background-color: var(--clr-light);
+  transition: transform 150ms ease-in-out;
+}
+
+header.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+.header_top {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+  background-color: var(--clr-light);
+  height: 45px;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.wrapper {
+  max-width: 1350px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
 /* Progress Bar*/
 #progressbar {
   --scrollAmount: 0%;
@@ -96,6 +146,8 @@ section {
   display: flex;
   align-items: center;
   transition: width 150ms;
+
+  transition: top 150ms ease-in-out;
 }
 
 #progressbar img {
@@ -176,6 +228,7 @@ section {
   color: var(--clr-light);
   justify-content: center;
   margin-inline: 5vw;
+  font-size: xx-large;
 }
 
 #scrollBody section {
@@ -323,6 +376,13 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 100dvh;
+}
+
+#sorterings-spil p {
+  width: 60%;
+}
+
+#sorterings-guide {
   background-color: var(--clr-light);
 }
 
