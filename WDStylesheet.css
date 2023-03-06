@@ -33,6 +33,7 @@ html {
 }
 
 body {
+  padding-top: 125px;
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 
@@ -99,9 +100,6 @@ header {
   transform: translateY(0%);
   background-color: var(--clr-light);
   transition: transform 150ms ease-in-out;
-}
-
-header.fixed {
   position: fixed;
   left: 0;
   right: 0;

@@ -31,16 +31,10 @@ let processScroll = () => {
   let scrollPercentName = (scrollTop / scrollBottom) * 100 + "%";
 
   showHeader = scrollTop < lastScrollY;
-  if (scrollTop <= header.offsetHeight) {
-    header.classList.remove("fixed");
+  if (showHeader) {
+    header.classList.remove("hide");
   } else {
-    header.classList.add("fixed");
-
-    if (showHeader) {
-      header.classList.remove("hide");
-    } else {
-      header.classList.add("hide");
-    }
+    header.classList.add("hide");
   }
 
   // Update last scroll Y
