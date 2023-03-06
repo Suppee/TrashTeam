@@ -27,6 +27,11 @@
     <script defer type="text/javascript" src="main.js"></script>
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <a href="/">Logo</a>
+    </header>
+
     <!-- Progress bar -->
     <div id="progressbar">
       <img id="truck" src="Billeder/Skraldebil.png" alt="Skraldebil" />
@@ -34,40 +39,35 @@
 
     <!-- Page Content -->
     <main id="main">
-      <!-- Intro Title-->
-      <div class="BodyHeader">
+      <!-- Intro Section -->
+      <section class="BodyHeader">
         <h1 id="Title">
           Her i Odense skal vi sortere efter <mark>8 affaldstyper</mark>
         </h1>
         <p class="Subtitle">
-          <mark>Scroll </mark> videre ned på siden for at få mere at vide.
+          <mark>Scroll</mark> videre ned på siden for at få mere at vide.
         </p>
-        <p class="Subtitle">
+
+        <a class="bounce" href="#mad">Scroll</a>
+
+        <!-- <p class="Subtitle">
           Eller <mark>klik</mark> på en af <mark>de 8 ikoner</mark>, som er
           placeret på skraldespandene.
-        </p>
-      </div>
+        </p> -->
+      </section>
 
-      <!-- Background -->
-      <div class="animBackground">
-        <lottie-player
-          id="firstAnim"
-          src="https://lottie.host/fa087bb9-2f2f-450a-9d63-093d11609a4e/aBKR5z7Ftb.json"
-        >
-        </lottie-player>
-      </div>
-
-      <section id="scrollBody">
+      <!-- Content -->
+      <div id="scrollBody">
         <!-- Main Text Body-->
         <div id="trashBagTop"></div>
         <!-- Mad Kategori -->
 
-        <div class="section" id="Mad">
+        <section id="mad" class="section">
           <!-- Restaffald Sticky Header -->
-          <h2 id="Mad">Madaffald</h2>
+          <h2>Madaffald</h2>
 
           <!-- Hvad Restaffald Afsnit -->
-          <div class="sectionBody">
+          <div>
             <p>
               Madaffald er affaldet, der kommer
               <mark class="yellow"> direkte fra madlavning. </mark> Madaffald er
@@ -76,7 +76,7 @@
             <img class="BodyImg" src="Mad Oversigt.png" alt="Ble" />
           </div>
 
-          <div class="sectionBody">
+          <div>
             <div class="moreInfo">
               <lottie-player
                 id="sixAnim"
@@ -102,18 +102,18 @@
           </div>
 
           <!-- Hvorfor Restaffald Afsnit -->
-          <div class="sectionBody">
+          <div>
             <h3>
               Når du sorterer madaaffald bidrager du med, at vi bruger færre nye
               ressourcer.
             </h3>
           </div>
 
-          <div class="sectionBody">
+          <div>
             <div id="animationWindow"></div>
           </div>
 
-          <div class="sectionBody">
+          <div>
             <h3>Husk madaffald <mark class="yellow"> skal</mark> i poser.</h3>
             <div class="bagInfo">
               <lottie-player
@@ -135,38 +135,45 @@
               vicevært.
             </p>
           </div>
-        </div>
-        <div id="trashBagBottom"></div>
-
-        <section>
-          <h3>Hvis du er i tvivl</h3>
-          <p>
-            Odense Renovation har lavet en
-            <a
-              href="https://www.odenserenovation.dk/sorteringsguide/"
-              class="yellow"
-              >sorteringsguide</a
-            >, hvor du kan finde ud af, hvordan du
-            <mark class="yellow"> skal sortere </mark> forskellige mad- og
-            fødevarer.
-          </p>
         </section>
+
+        <div id="trashBagBottom"></div>
+      </div>
+
+      <!-- Video Game Section -->
+      <section id="sorterings-spil" class="white">
+        <h2 id="Spil">Sorterings Spillet</h2>
+        <p>
+          Spil vores interaktive spil og lær hvilke affaldstyper der er og
+          hvordan man sorterer dem
+        </p>
+
+        <!-- Video Game Frame -->
+        <iframe
+          title="Sortering Spil"
+          id="game"
+          width="552"
+          height="167"
+          frameborder="0"
+          src="https://itch.io/embed/1839210"
+        >
+          <a href="https://mkofoed.itch.io/tg">TG by mkofoed</a>
+        </iframe>
       </section>
 
-      <!-- Videospil -->
-      <section>
-        <div id="sticky">
-          <h2 id="Spil">Sorterings Spillet</h2>
-          <iframe
-            title="Sortering Spil"
-            id="game"
-            width="552"
-            height="167"
-            frameborder="0"
-            src="https://itch.io/embed/1839210"
-            ><a href="https://mkofoed.itch.io/tg">TG by mkofoed</a></iframe
-          >
-        </div>
+      <!-- Sorting Guide -->
+      <section id="sorterings-guide">
+        <h3>Hvis du er i tvivl</h3>
+        <p>
+          Odense Renovation har lavet en
+          <a
+            href="https://www.odenserenovation.dk/sorteringsguide/"
+            class="yellow"
+            >sorteringsguide</a
+          >, hvor du kan finde ud af, hvordan du
+          <mark class="yellow"> skal sortere </mark> forskellige mad- og
+          fødevarer.
+        </p>
       </section>
 
       <!-- Navigation bar at bottom of page-->
@@ -210,5 +217,17 @@
         </nav>
       </div>
     </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <!-- Background -->
+    <div id="background">
+      <lottie-player
+        id="firstAnim"
+        src="https://lottie.host/fa087bb9-2f2f-450a-9d63-093d11609a4e/aBKR5z7Ftb.json"
+      >
+      </lottie-player>
+    </div>
   </body>
 </html>

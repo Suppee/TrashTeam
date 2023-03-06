@@ -9,7 +9,7 @@
   --clr-primary-cyan: #9ccac9;
   --clr-primary-lime: #c3ce1c;
   --clr-primary-orange: #d78300;
-  --clr-light: #e6e6e6;
+  --clr-light: #ffffff;
   --clr-dark: #212125;
   --clr-gray: #96969a;
 
@@ -24,33 +24,64 @@
   --clr-miljoestyrelsen-black: #141414;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  padding: 0;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: xx-large;
   background-color: var(--clr-primary-cyan);
   color: var(--clr-dark);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-size: cover;
-  background-position: center;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 main {
   text-align: center;
   margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+h1 {
+  line-height: 4rem;
+  font-size: 4rem;
+}
+h2 {
+  line-height: 4rem;
+  font-size: 4rem;
+}
+h3 {
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+mark {
+  background-color: transparent;
+  color: var(--clr-primary-green-variant);
+}
+
+section {
+  padding-block: 3rem;
 }
 
 /* Progress Bar*/
@@ -68,10 +99,11 @@ main {
 }
 
 #progressbar img {
-  height: 1rem;
+  height: 100%;
   position: absolute;
   right: 0;
   transform: translateX(60%);
+  opacity: 0; /* Hide by default*/
   transition: opacity 150ms;
 }
 
@@ -140,12 +172,14 @@ main {
 }
 
 /* MAIN SCROLLING ELEMENT*/
-/* Main Scrolling ID */
 #scrollBody {
+  color: var(--clr-light);
   justify-content: center;
-  margin: auto;
-  width: 80%;
-  z-index: 5;
+  margin-inline: 5vw;
+}
+
+#scrollBody section {
+  padding-inline: 10vw;
 }
 
 /* Body Classes */
@@ -153,6 +187,13 @@ main {
   width: 60%;
   margin-inline: auto;
   -webkit-text-stroke: 1px var(--clr-dark);
+}
+
+.bounce {
+  position: absolute;
+  animation: bounce 2s ease-in-out infinite;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .BodyImg {
@@ -174,75 +215,8 @@ main {
   cursor: pointer;
 }
 
-/* Trash Sorting Category Header*/
-h1 {
-  width: 100%;
-  margin: 0px auto;
-  padding-bottom: 2%;
-  padding-top: 20%;
-  line-height: 60px;
-  font-size: 60px;
-  color: var(--clr-light);
-}
-
-h2 {
-  width: 100%;
-  margin: 0px auto;
-  padding-bottom: 2%;
-  height: 100px;
-  line-height: 60px;
-  font-size: 60px;
-  color: var(--clr-light);
-}
-
-h3 {
-  width: 100%;
-  color: var(--clr-light);
-}
-
-/* Section Classes*/
-h4 {
-  color: var(--clr-light);
-}
-
-/* Section Classes*/
-h5 {
-  width: 100%;
-  margin: 0px auto;
-  padding-bottom: 20%;
-  padding-top: 20%;
-  height: 100px;
-  line-height: 60px;
-  font-size: 40px;
-}
-h6 {
-  width: 100%;
-  margin: 0px auto;
-  padding-bottom: 40%;
-  padding-top: 20%;
-  height: 100px;
-  line-height: 60px;
-  font-size: 40px;
-}
-
-mark {
-  background-color: transparent;
-  color: var(--clr-primary-green-variant);
-}
-
 .yellow {
   color: var(--clr-primary-yellow);
-}
-
-.section {
-  margin-top: 10%;
-  padding-bottom: 10%;
-}
-.sectionBody {
-  height: auto;
-  margin-right: 10%;
-  margin-left: 10%;
-  color: var(--clr-light);
 }
 
 .moreInfo {
@@ -259,23 +233,13 @@ mark {
   margin-left: 33%;
 }
 
-.sticky {
-  top: 0;
-  width: auto;
-  font-size: 20px;
-}
-
-#Spil {
-  margin-top: 30%;
-  -webkit-text-stroke: 1px #000000;
-}
-
 #trashBagTop {
   width: 102%;
   height: auto;
   left: -1.35%;
   margin-bottom: -11%;
   margin-top: -20%;
+  pointer-events: none;
 }
 
 #trashBagBottom {
@@ -285,53 +249,54 @@ mark {
   margin-top: -1%;
 }
 
-#game {
-  width: 552;
-  height: 167;
-  margin-bottom: 50%;
-}
-
 /* AFFALDS KATEGORI IDS*/
 /* Gruppe 1 */
 #Rest {
-  background-color: black;
-  color: white;
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-black);
 }
-#Mad {
+#mad {
+  color: var(--clr-light);
   background-color: var(--clr-miljoestyrelsen-green);
 }
 
 /* Gruppe 2 */
 #Pap {
+  color: var(--clr-light);
   background-color: var(--clr-miljoestyrelsen-brown);
 }
 #Papir {
+  color: var(--clr-light);
   background-color: var(--clr-miljoestyrelsen-blue);
 }
 #Metal {
+  color: var(--clr-light);
   background-color: var(--clr-miljoestyrelsen-gray);
 }
 #Glas {
+  color: var(--clr-light);
   background-color: var(--clr-miljoestyrelsen-cyan);
 }
 
 /* Gruppe 3 */
 #Karton {
+  color: var(--clr-light);
   background-color: var(--clr-miljoestyrelsen-brown);
 }
 #Plast {
+  color: var(--clr-light);
   background-color: var(--clr-miljoestyrelsen-purple);
 }
 
-.animBackground {
+#background {
   position: fixed;
   inset: 0;
   background: linear-gradient(
     to top,
     #bcb753 0%,
     #bcb753 25%,
-    #a8c7c2 25%,
-    #a8c7c2 100%
+    var(--clr-light) 25%,
+    var(--clr-primary-blue) 100%
   );
   z-index: -1000;
   padding-top: 6.5%;
@@ -349,4 +314,31 @@ mark {
 }
 .show {
   opacity: 100%;
+}
+
+/* Game Section */
+#sorterings-spil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background-color: var(--clr-light);
+}
+
+/* Animations */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
