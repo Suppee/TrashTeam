@@ -237,12 +237,15 @@ header.hide {
 .BodyHeader {
   width: 60%;
   margin-inline: auto;
-  -webkit-text-stroke: 1px var(--clr-dark);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 8rem;
+}
+
+.BodyHeader mark {
+  -webkit-text-stroke: 1px var(--clr-dark);
 }
 
 .bounce {
