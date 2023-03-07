@@ -1,0 +1,63 @@
+/* Navigation Bar*/
+.navbackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  bottom: -15%;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+}
+.navbar {
+  height: 85%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 27%;
+}
+
+#navimg {
+  width: 55%;
+}
+.navBin {
+  position: relative;
+  height: 80%;
+  bottom: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navBinSelectors {
+  pointer-events: auto;
+  position: relative;
+  width: 20%;
+  height: 23%;
+  top: -60%;
+  left: 12%;
+  margin: 9%;
+}
+
+.navBinSelectors2 {
+  pointer-events: auto;
+  position: relative;
+  width: 20%;
+  height: 23%;
+  top: -75%;
+  left: 12%;
+  margin-top: 17%;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.navBinSelectors3 {
+  pointer-events: auto;
+  position: relative;
+  width: 20%;
+  height: 23%;
+  top: -75%;
+  left: 12%;
+  margin-top: 1%;
+  margin-left: 9%;
+  margin-right: 9%;
+}

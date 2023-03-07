@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Trash</title>
+    <title>Sortering af affald</title>
 
-    <link rel="stylesheet" type="text/css" href="WDStylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
     <!-- Scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -24,24 +24,15 @@
       defer
       src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"
     ></script>
-    <script defer type="text/javascript" src="main.js"></script>
+    <script defer type="text/javascript" src="./bundle.js"></script>
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <!-- Top -->
-      <nav class="header_top wrapper" aria-label="Side">
-        <ul>
-          <li>
-            <a href="/"></a>
-          </li>
-        </ul>
-      </nav>
-
+    <header class="header">
       <!-- Bottom -->
       <div class="header__bottom wrapper">
         <a href="/">
-          <img src="/logo.svg" alt="odense renovation" />
+          <img src="./images/logo.svg" alt="odense renovation" />
         </a>
         <div>Menu</div>
       </div>
@@ -49,7 +40,7 @@
 
     <!-- Progress bar -->
     <div id="progressbar">
-      <img id="truck" src="Billeder/Skraldebil.png" alt="Skraldebil" />
+      <img id="truck" src="./images/Skraldebil.png" alt="Skraldebil" />
     </div>
 
     <!-- Page Content -->
@@ -64,7 +55,7 @@
         </p>
 
         <a class="bounce" href="#mad">
-          <img src="/down-arrow.svg" alt="odense renovation" />
+          <img src="./images/down-arrow.svg" alt="odense renovation" />
         </a>
 
         <!-- <p class="Subtitle">
@@ -90,7 +81,7 @@
               <mark class="yellow"> direkte fra madlavning. </mark> Madaffald er
               dog <mark class="yellow">ikke </mark>den gamle grøn affald.
             </p>
-            <img class="BodyImg" src="/Billeder/Mad Oversigt.png" alt="Ble" />
+            <img class="BodyImg" src="./images/Mad Oversigt.png" alt="Ble" />
           </div>
 
           <div>

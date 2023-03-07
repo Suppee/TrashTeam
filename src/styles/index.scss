@@ -1,0 +1,203 @@
+@import 'base.scss';
+
+main {
+  text-align: center;
+  margin: auto;
+}
+
+/* MAIN SCROLLING ELEMENT*/
+#scrollBody {
+  color: var(--clr-light);
+  justify-content: center;
+  margin-inline: 5vw;
+  font-size: xx-large;
+}
+
+#scrollBody section {
+  padding-inline: 10vw;
+}
+
+/* Body Classes */
+.BodyHeader {
+  width: 60%;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.BodyHeader mark {
+  -webkit-text-stroke: 1px var(--clr-dark);
+}
+
+.bounce {
+  position: absolute;
+  bottom: 0;
+}
+
+.bounce img {
+  animation: bounce 1s infinite;
+  width: 4rem;
+}
+
+.BodyImg {
+  width: 100%;
+}
+
+.BodyImgTwo {
+  width: 30%;
+  height: auto;
+  margin-left: -10%;
+  margin-top: 10%;
+}
+
+#sixAnim,
+#sevenAnim,
+#eightAnim {
+  cursor: pointer;
+}
+
+.moreInfo {
+  height: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bagInfo {
+  height: 33%;
+  width: 33%;
+  margin-left: 33%;
+}
+
+#trashBagTop {
+  width: 102%;
+  height: auto;
+  left: -1.35%;
+  margin-bottom: -11%;
+  margin-top: -20%;
+  pointer-events: none;
+}
+
+#trashBagBottom {
+  width: 102%;
+  height: auto;
+  left: -1.35%;
+  margin-top: -1%;
+}
+
+/* AFFALDS KATEGORI IDS*/
+/* Gruppe 1 */
+#Rest {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-black);
+}
+#mad {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-green);
+}
+
+/* Gruppe 2 */
+#Pap {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-brown);
+}
+#Papir {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-blue);
+}
+#Metal {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-gray);
+}
+#Glas {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-cyan);
+}
+
+/* Gruppe 3 */
+#Karton {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-brown);
+}
+#Plast {
+  color: var(--clr-light);
+  background-color: var(--clr-miljoestyrelsen-purple);
+}
+
+#background {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    #bcb753 0%,
+    #bcb753 25%,
+    var(--clr-light) 25%,
+    var(--clr-primary-blue) 100%
+  );
+  z-index: -1000;
+  padding-top: 6.5%;
+  margin-left: -1%;
+  pointer-events: none;
+}
+
+#animationWindow {
+  width: 125%;
+  height: 125%;
+  left: -12.5%;
+}
+.hide {
+  opacity: 0%;
+}
+.show {
+  opacity: 100%;
+}
+
+/* Game Section */
+#sorterings-spil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+#sorterings-spil p {
+  width: 60%;
+}
+
+#sorterings-guide {
+  background-color: var(--clr-light);
+}
+
+/* Animations */
+/* @keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+} */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

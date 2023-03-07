@@ -1,0 +1,31 @@
+/* Header */
+.header {
+  z-index: 999;
+  transform: translateY(0%);
+  background-color: var(--clr-light);
+  transition: transform 150ms ease-in-out;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &.hide {
+    transform: translateY(-100%);
+  }
+
+  &__top {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    background-color: var(--clr-light);
+    height: 45px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+}

@@ -1,0 +1,22 @@
+/* Progress Bar*/
+#progressbar {
+  --scrollAmount: 0%;
+  background-color: var(--clr-primary-yellow);
+  width: var(--scrollAmount);
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  transition: top 150ms ease-in-out, width 150ms ease;
+
+  img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform: translateX(60%);
+    opacity: 0; /* Hide by default*/
+    transition: opacity 150ms;
+  }
+}

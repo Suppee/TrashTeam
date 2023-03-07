@@ -1,0 +1,67 @@
+@import 'reset.scss';
+@import 'variables.scss';
+
+/* Components */
+@import 'header.scss';
+@import 'navigation.scss';
+@import 'progressbar.scss';
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 125px;
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+
+  background-color: var(--clr-primary-cyan);
+  color: var(--clr-dark);
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  line-height: 4rem;
+  font-size: 4rem;
+}
+h2 {
+  line-height: 4rem;
+  font-size: 4rem;
+}
+h3 {
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+mark {
+  background-color: transparent;
+  color: var(--clr-primary-green-variant);
+}
+
+section {
+  padding-block: 3rem;
+}
+
+/* Components */
+.wrapper {
+  max-width: 1350px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+/* Utility Classes */
+.yellow {
+  color: var(--clr-primary-yellow);
+}
