@@ -1,5 +1,6 @@
 @import 'reset.scss';
 @import 'variables.scss';
+@import 'animations.scss';
 
 /* Components */
 @import 'header.scss';
@@ -52,6 +53,22 @@ mark {
 
 section {
   padding-block: 3rem;
+}
+
+#background {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    #bcb753 0%,
+    #bcb753 25%,
+    var(--clr-light) 25%,
+    var(--clr-primary-blue) 100%
+  );
+  z-index: -1000;
+  padding-top: 6.5%;
+  margin-left: -1%;
+  pointer-events: none;
 }
 
 /* Components */
